@@ -71,4 +71,44 @@ body {
   .container {
     width: 1300px;
   }
+}
+
+.bose__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+@media screen and (max-width: 300px) {
+  .bose__title {
+    font-size: 24px;
+  }
+}
+.bose__text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 125%;
+  color: #e7e7e7;
+}
+@media screen and (max-width: 300px) {
+  .bose__text {
+    font-size: 20px;
+  }
+}
+.bose__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width: 300px) {
+  .bose__subtitle {
+    font-size: 14px;
+    line-height: 125%;
+  }
 }/*# sourceMappingURL=main.css.map */
