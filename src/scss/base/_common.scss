@@ -1,3 +1,6 @@
+@use "../base/variables" as *;
+
 body {
-    font-family: Roboto;
+    font-family: "Poppins";
+    background-color: $background-color;
 }

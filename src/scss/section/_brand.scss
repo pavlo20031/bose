@@ -1,0 +1,68 @@
+@use '../base/variables' as *;
+
+.brand {
+  padding: 52px 0;
+
+  @media screen and (min-width: 708px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: 1300px) {
+    padding: 170px 0;
+  }
+
+  &__title {
+    width: 124px;
+    color: $main-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 708px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      font-size: 54px;
+    }
+  }
+
+  &__subtitle {
+    color: $link-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+
+    @media screen and (min-width: 708px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      font-size: 20px;
+    }
+  }
+
+  &__head {
+    color: $main-color;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    @media screen and (min-width: 1300px) {
+      font-size: 28px;
+    }
+  }
+
+  &__principal {
+    color: $subtext-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+
+        @media screen and (min-width: 708px) {
+      font-size: 16px;
+    }
+  }
+}
