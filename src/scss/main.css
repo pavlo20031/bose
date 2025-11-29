@@ -86,6 +86,82 @@ body {
     padding: 170px 0;
   }
 }
+.brand__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 708px) {
+  .brand__box {
+    display: flex;
+  }
+}
+.brand__box > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 708px) {
+  .brand__box > div {
+    gap: 0;
+  }
+}
+.brand__wrap > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.brand__img2 {
+  display: block;
+  width: 280px;
+  height: 251px;
+  background-color: aqua;
+}
+@media screen and (min-width: 708px) {
+  .brand__img2 {
+    display: none;
+  }
+}
+.brand__img {
+  display: none;
+  background-color: aqua;
+}
+@media screen and (min-width: 708px) {
+  .brand__img {
+    display: block;
+    width: 354px;
+    height: 524px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .brand__img {
+    width: 700px;
+    height: 628px;
+  }
+}
+.brand__imgs {
+  width: 280px;
+  height: 343px;
+  background-color: aqua;
+}
+@media screen and (min-width: 708px) {
+  .brand__imgs {
+    order: -1;
+    width: 294px;
+    height: 355px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .brand__imgs {
+    width: 290px;
+    height: 355px;
+  }
+}
+.brand__icon {
+  width: 34px;
+  height: 25px;
+  fill: #DF3D3A;
+}
 .brand__title {
   width: 124px;
   color: #E7E7E7;
@@ -110,10 +186,14 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.45;
+  text-wrap: balance;
 }
 @media screen and (min-width: 708px) {
   .brand__subtitle {
+    width: 294px;
     font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 85px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -121,15 +201,22 @@ body {
     font-size: 20px;
   }
 }
+.brand__sub {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .brand__head {
   color: #E7E7E7;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
 }
 @media screen and (min-width: 1300px) {
   .brand__head {
     font-size: 28px;
+    margin-bottom: 32px;
   }
 }
 .brand__principal {
@@ -165,7 +252,7 @@ body {
   letter-spacing: 0.48px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 708px) {
   .reviews__title {
     font-size: 30px;
   }
@@ -173,6 +260,21 @@ body {
 @media screen and (min-width: 1300px) {
   .reviews__title {
     font-size: 54px;
+  }
+}
+.reviews__video {
+  width: 100%;
+}
+@media screen and (min-width: 708px) {
+  .reviews__video {
+    width: 648px;
+    height: 417px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .reviews__video {
+    width: 920px;
+    height: 590px;
   }
 }
 .reviews__link {
@@ -218,6 +320,93 @@ body {
 
 .actives {
   opacity: 1;
+}
+
+.faq {
+  padding: 0 0 52px 0;
+}
+@media screen and (min-width: 708px) {
+  .faq {
+    padding: 0 0 100px 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq {
+    padding: 0 0 170px 0;
+  }
+}
+.faq__title {
+  color: #E7E7E7;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1300px) {
+  .faq__title {
+    font-size: 30px;
+  }
+}
+.faq__num {
+  color: #E7E7E7;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.7;
+}
+@media screen and (min-width: 1300px) {
+  .faq__num {
+    font-size: 28px;
+  }
+}
+.faq__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+@media screen and (min-width: 708px) {
+  .faq__text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq__text {
+    font-size: 28px;
+  }
+}
+.faq__btn {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-with: 1300px) {
+  .faq__btn {
+    width: 42px;
+    height: 42px;
+  }
+}
+.faq__icon {
+  width: 9px;
+  height: 14px;
+  fill: #E7E7E7;
+}
+@media screen and (min-with: 1300px) {
+  .faq__icon {
+    width: 12px;
+    height: 20px;
+  }
+}
+.faq__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
 }
 
 .footer {
