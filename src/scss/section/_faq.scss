@@ -18,9 +18,11 @@
     line-height: 1.2;
     letter-spacing: 0.48px;
     text-transform: uppercase;
+    margin-bottom: 32px;
 
     @media screen and (min-width: 1300px) {
       font-size: 30px;
+      margin-bottom: 50px;
     }
   }
 
