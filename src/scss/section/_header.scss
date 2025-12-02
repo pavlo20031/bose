@@ -4,8 +4,13 @@
 .header {
   padding: 16px 0;
   padding-left: 60px;
-
-  @media screen and (min-width: 768px) {
+  & > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 708px) {
     padding: 21px 0;
   }
   @media screen and (min-width: 1200px) {
@@ -25,10 +30,10 @@
     letter-spacing: 0.78px;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 708px) {
       margin-right: 88px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 708px) {
       font-size: 26px;
       letter-spacing: 0.78px;
       margin-right: 550px;
@@ -45,8 +50,10 @@
     align-items: center;
     justify-content: center;
     border: none;
-
-    @media screen and (min-width: 768px) {
+    & > svg {
+      fill: $menu-color;
+    }
+    @media screen and (max-width: 708px) {
       display: none;
     }
 
@@ -65,7 +72,8 @@
     &-list {
       display: none;
       margin-left: auto;
-      @media screen and (min-width: 768px) {
+      margin-top: 15px;
+      @media screen and (min-width: 708px) {
         display: flex;
         flex-direction: row;
         gap: 77px;
