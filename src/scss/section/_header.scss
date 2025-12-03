@@ -52,11 +52,12 @@
     border: none;
     & > svg {
       fill: $menu-color;
+      width: 40px;
+      height: 40px;
     }
-    @media screen and (max-width: 708px) {
+    @media screen and (min-width: 708px) {
       display: none;
     }
-
     & .header__menu-icon {
       width: 40px;
       height: 40px;
@@ -65,7 +66,7 @@
   }
 
   &__nav {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 708px) {
       display: none;
     }
 
