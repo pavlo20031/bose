@@ -12,7 +12,6 @@
     padding-bottom: 100px;
   }
   &__title {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 24px;
     line-height: 120%;
@@ -26,7 +25,6 @@
   }
 
   &__text {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 20px;
     line-height: 125%;
@@ -41,7 +39,6 @@
       font-size: 20px;
       line-height: 145%;
     }
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 125%;
