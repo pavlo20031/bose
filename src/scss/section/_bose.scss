@@ -32,6 +32,7 @@
     margin-top: 20px;
     @media screen and (min-width: 708px) {
       font-size: 28px;
+      margin-top: 16px;
     }
   }
 
@@ -45,5 +46,19 @@
     line-height: 125%;
     color: rgba(255, 255, 255, 0.8);
     margin-top: 32px;
+  }
+
+  &__img{
+   width: 280px;
+   height: 253px;
+   margin-top: 32px;
+   @media screen and (min-width: 708px) {
+    width: 354px;
+    height: 297px;
+   }
+   @media screen and (min-width: 1300px) {
+    width: 700px;
+    height: 586px;
+   }
   }
 }

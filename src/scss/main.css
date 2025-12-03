@@ -112,6 +112,7 @@ body {
 @media screen and (min-width: 708px) {
   .bose__text {
     font-size: 28px;
+    margin-top: 16px;
   }
 }
 .bose__subtitle {
@@ -125,6 +126,23 @@ body {
   .bose__subtitle {
     font-size: 20px;
     line-height: 145%;
+  }
+}
+.bose__img {
+  width: 280px;
+  height: 253px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 708px) {
+  .bose__img {
+    width: 354px;
+    height: 297px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .bose__img {
+    width: 700px;
+    height: 586px;
   }
 }
 
@@ -156,6 +174,7 @@ body {
   line-height: 125%;
   font-style: normal;
   color: #e7e7e7;
+  margin-top: 69px;
 }
 @media screen and (min-width: 1300px) {
   .quarantees__subtitle {
@@ -168,6 +187,7 @@ body {
   line-height: 125%;
   font-style: normal;
   color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
 }
 @media screen and (min-width: 1300px) {
   .quarantees__text {
@@ -187,6 +207,7 @@ body {
   line-height: 125%;
   font-style: normal;
   color: #e7e7e7;
+  margin-top: 92px;
 }
 @media screen and (min-width: 1300px) {
   .quarantees__sabtitle {
@@ -199,6 +220,7 @@ body {
   line-height: 125%;
   font-style: normal;
   color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
 }
 @media screen and (min-width: 1300px) {
   .quarantees__suptext {
