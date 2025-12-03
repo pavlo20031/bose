@@ -90,7 +90,6 @@ body {
   }
 }
 .bose__title {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
@@ -104,11 +103,11 @@ body {
   }
 }
 .bose__text {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
   color: #e7e7e7;
+  margin-top: 20px;
 }
 @media screen and (min-width: 708px) {
   .bose__text {
@@ -116,11 +115,11 @@ body {
   }
 }
 .bose__subtitle {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 125%;
   color: rgba(255, 255, 255, 0.8);
+  margin-top: 32px;
 }
 @media screen and (min-width: 708px) {
   .bose__subtitle {
@@ -130,7 +129,6 @@ body {
 }
 
 .quarantees__title {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
@@ -153,7 +151,6 @@ body {
   }
 }
 .quarantees__subtitle {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
@@ -166,7 +163,6 @@ body {
   }
 }
 .quarantees__text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 125%;
@@ -186,7 +182,6 @@ body {
   }
 }
 .quarantees__sabtitle {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
@@ -199,7 +194,6 @@ body {
   }
 }
 .quarantees__suptext {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 125%;
@@ -221,7 +215,6 @@ body {
 
 .feedback__title {
   color: #e7e7e7;
-  font-family: Gilroy;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -243,7 +236,6 @@ body {
 }
 .feedback__textar {
   color: rgba(255, 255, 255, 0.8);
-  font-family: Gilroy;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -263,7 +255,6 @@ body {
 }
 .feedback__input {
   color: rgba(255, 255, 255, 0.3);
-  font-family: Gilroy;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -277,7 +268,6 @@ body {
 }
 .feedback__texter {
   color: rgba(255, 255, 255, 0.3);
-  font-family: Gilroy;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -300,7 +290,6 @@ body {
 }
 .feedback__text {
   color: rgba(255, 255, 255, 0.8);
-  font-family: Gilroy;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -314,7 +303,6 @@ body {
 }
 .feedback__link {
   color: rgba(255, 255, 255, 0.8);
-  font-family: Gilroy;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -328,7 +316,6 @@ body {
 }
 .feedback__button {
   color: rgba(255, 255, 255, 0.9);
-  font-family: Gilroy;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
