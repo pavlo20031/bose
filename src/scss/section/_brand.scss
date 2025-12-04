@@ -203,4 +203,13 @@
       font-size: 16px;
     }
   }
+
+  &__container{
+    @media screen and (min-width:708px) {
+          width: 294px;
+    }
+        @media screen and (min-width:1300px) {
+          width: 382px;
+    }
+  }
 }
