@@ -1,1 +1,33 @@
 @use "../base/variables" as *;
+.hero__subtitle, .hero__duration {
+  color: #FFFFFFCC;
+  font-weight: 400;
+  font-size: 14px;
+  width: 321px;
+  margin-left: 60px;
+}
+
+.hero__duration {
+  width: 110px;
+  margin-bottom: 94px;
+}
+
+.order__btn {
+  border: none;
+  background-color: #DF3D3A;
+  color: #FFFFFF;
+  padding: 22px 67px;
+  margin-left: 243px;
+}
+.hero__title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 74px;
+  text-transform: uppercase;
+  padding: 22px 67px;
+  margin-left: 178px;
+  width: 634px;
+  height: 148px;
+  top: 363px;
+
+}
