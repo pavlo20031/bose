@@ -61,4 +61,9 @@
     height: 586px;
    }
   }
+
+  &__item{
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
