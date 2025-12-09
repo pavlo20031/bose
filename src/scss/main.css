@@ -89,11 +89,15 @@ body {
     padding-bottom: 100px;
   }
 }
+.bose__list {
+  display: flex;
+  gap: 239px;
+  justify-content: center;
+  align-items: flex-start;
+}
 .bose__title {
   font-weight: 600;
   font-size: 24px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #e7e7e7;
 }
@@ -103,29 +107,30 @@ body {
   }
 }
 .bose__text {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 125%;
-  color: #e7e7e7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(250, 250, 250, 0.8);
   margin-top: 20px;
 }
 @media screen and (min-width: 708px) {
   .bose__text {
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 16px;
+    margin-top: 27px;
   }
 }
 .bose__subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 125%;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(231, 231, 231);
   margin-top: 32px;
 }
 @media screen and (min-width: 708px) {
   .bose__subtitle {
-    font-size: 20px;
-    line-height: 145%;
+    font-size: 28px;
+    line-height: 125%;
+    margin-top: 43px;
   }
 }
 .bose__img {
