@@ -88,7 +88,9 @@ width: 294.0px;
     }
   }
 
-  &__img {
+  
+}
+&__img {
     width: 280px;
     height: 293px;
     @media screen and (min-width: 708px) {
@@ -104,5 +106,4 @@ width: 294.0px;
       margin-right: 150px;
     }
   }
-}
 }
