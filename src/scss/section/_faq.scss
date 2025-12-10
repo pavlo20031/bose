@@ -65,7 +65,7 @@
     align-items: center;
     padding: 9px 12px;
 
-    @media screen and (min-with: 1300px) {
+    @media screen and (min-width: 1300px) {
       padding: 11px 15px;
     }
   }
@@ -76,7 +76,7 @@
 
     fill: $main-color;
 
-    @media screen and (min-with: 1300px) {
+    @media screen and (min-width: 1300px) {
       width: 12px;
       height: 20px;
     }
