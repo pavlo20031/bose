@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bose/assets/index-a8d40d95.css">
+    <link rel="stylesheet" href="/bose/assets/index-52aaa2a3.css">
   </head>
   <body>
 
@@ -151,41 +151,46 @@
     <link rel="stylesheet" href="../scss/section/_bose.scss">
 <section class="bose">
     <div class="container">
-        <ul class="bose__list">
-            <li class="bose__item">
-                <h2 class="bose__title">Bose AR</h2>
-                <h3 class="bose__subtitle">Brand name technology</h3>
-                <p class="bose__text">
-                    Bose AR is a unique audio platform
-                    augmented reality, that opens before
-                    you new facets of sound. Itallows you
-                    to stay connected to the real world and
-                    immerse yourself in the virtual universe
-                    at the same time.</p>
-            </li>
-            <li class="bose__item">
-                <img class="bose__img" src="" alt="">
-            </li>
-        </ul>
+        <div class="bose__box">
+            <h2 class="bose__title">Bose AR</h2>
+            <h3 class="bose__subtitle">Brand name technology</h3>
+            <p class="bose__text">
+                Bose AR is a unique audio platform
+                augmented reality, that opens before
+                you new facets of sound. Itallows you
+                to stay connected to the real world and
+                immerse yourself in the virtual universe
+                at the same time.</p>
+        </div>
+        <picture>
+            <source srcset="../img/dekstop/bose-des@1x.webp 1x, ../img/dekstop/bose-des@2x.webp 2x"
+                media="(min-width: 1300px)">
+            <source srcset="../img/tablet/bose-tablet@1x.webp 1x, ../img/tablet/bose-tablet@2x.webp 2x"
+                media="(min-width: 708px)">
+            <source srcset-="../img/mobile/bose-mobile@1x.webp 1x, ../img/mobile/bose-mobile@2x.webp 2x"
+                media="(max-width: 707px)">
+            <img class="bose__img" src="../img/dekstop/bose-des@1x.webp" alt="bose">
+        </picture>
     </div>
 </section>
     
-    <section class="quarantees">
+    <section class="guarantees">
         <div class="container">
-            <h2 class="quarantees__title">Guarantees</h2>
-            <ul class="quarantees__list">
-                <li class="quarantees__item">
-                    <h3 class="quarantees__subtitle">90 Day Money Back Guarantee</h3>
-                    <p class="quarantees__text">If you are not 100% satisfied with a product, you can return it back for a full refund.</p>
+            <h2 class="guarantees__title">Guarantees</h2>
+            <ul class="guarantees__list">
+                <li class="guarantees__item">
+                    <h3 class="guarantees__subtitle">90 Day Money Back Guarantee</h3>
+                    <p class="guarantees__text">If you are not 100% satisfied with a product, you can return it back for a full refund.</p>
                 </li>
-                <li class="quarantees__subitem">
-                    <h3 class="quarantees__sabtitle">1 year warranty</h3>
-                    <p class="quarantees__suptext">Regardless of your country of residence,
+                <li class="guarantees__item">
+                    <h3 class="guarantees__subtitle">1 year warranty</h3>
+                    <p class="guarantees__text">Regardless of your country of residence,
                         if your headphones are broken, we will
                         send you new ones.</p>
                 </li>
-                <li class="quarantees__saditem"><a class="quarantees__link" href=""></a></li>
+                
             </ul>
+            <img class="guarantees__img" src="../img/dekstop/guarantees-des@1x.webp" alt="">
         </div>
     </section>
     <section class="brand">
