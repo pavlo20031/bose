@@ -486,6 +486,7 @@ body {
 @media screen and (min-width: 1300px) {
   .luxury__title {
     font-size: 54px;
+    width: 650px;
   }
 }
 .luxury__subtitle {
@@ -499,6 +500,7 @@ body {
 @media screen and (min-width: 1300px) {
   .luxury__subtitle {
     font-size: 28px;
+    width: 412px;
   }
 }
 .luxury__text {
@@ -519,6 +521,7 @@ body {
 @media screen and (min-width: 1300px) {
   .luxury__text {
     font-size: 20px;
+    width: 550px;
   }
 }
 .luxury__img {
@@ -530,6 +533,11 @@ body {
   .luxury__img {
     width: 768px;
     height: 293px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .luxury__img {
+    width: 1440px;
   }
 }
 @media screen and (min-width: 708px) {
