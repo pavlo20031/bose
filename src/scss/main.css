@@ -875,7 +875,7 @@ body {
   align-items: center;
   padding: 9px 12px;
 }
-@media screen and (min-with: 1300px) {
+@media screen and (min-width: 1300px) {
   .faq__btn {
     padding: 11px 15px;
   }
@@ -885,7 +885,7 @@ body {
   height: 14px;
   fill: #E7E7E7;
 }
-@media screen and (min-with: 1300px) {
+@media screen and (min-width: 1300px) {
   .faq__icon {
     width: 12px;
     height: 20px;
@@ -1044,4 +1044,39 @@ body {
 }
 .footer__lister {
   align-items: end;
+}
+
+.menu__text {
+  width: 98px;
+  height: 12px;
+  fill: #E7E7E7;
+}
+.menu__btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.menu__icon {
+  width: 18px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.8);
+}
+.menu__link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+@media screen and (min-width: 708px) {
+  .menu__link {
+    font-size: 16px;
+  }
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }/*# sourceMappingURL=main.css.map */
