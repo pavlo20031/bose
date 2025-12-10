@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/taam1project/",
+    "build": "vite build --base=/bose/",
     "preview": "vite preview"
     },
     "devDependencies": {
