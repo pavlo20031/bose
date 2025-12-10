@@ -1,1 +1,98 @@
 @use "../base/variables" as *;
+
+.product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 32px;
+  @media screen and (min-width: 708px) {
+    gap: 0;
+  }
+
+  &__order__btn {
+    border: none;
+    background-color: #DF3D3A;
+    color: $menu-color;
+    padding: 19px 113px;
+    font-size: 16px;
+  }
+
+  &__title {
+    color: $menu-color;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    @media screen and (min-width: 708px) {
+
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    @media screen and (min-width: 708px) {
+      margin-bottom: 52px;
+    }
+    &__item {
+      border-top: 2px solid rgba(255, 255, 255, 0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+
+      & > p {
+        color: #FFFFFFCC;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+      }
+
+      & > button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+
+        & > svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+
+    .actions {
+      @media screen and (min-width: 708px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__cost {
+      width: 283px;
+      height: 65px;
+      color: $accent-color;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 120%;
+      text-transform: uppercase;
+
+    }
+
+  }
+}
+.product{
+  & > .product-info > img{
+    @media screen and (min-width: 708px) {
+      margin-bottom: 52px;
+    }
+    @media screen and (min-width: 1300px) {
+      position: absolute;
+      left: 720px;
+      bottom: 147px;
+    }
+  }
+}

@@ -103,9 +103,9 @@ body {
 }
 .header__logo {
   font-weight: 700;
-  line-height: 1.38;
+  line-height: 1;
   font-size: 24px;
-  letter-spacing: 0.78px;
+  letter-spacing: 1px;
   margin-right: auto;
   fill: rgba(255, 255, 255, 0.8);
 }
@@ -120,7 +120,7 @@ body {
 @media screen and (min-width: 708px) {
   .header__logo {
     font-size: 26px;
-    letter-spacing: 0.78px;
+    letter-spacing: 1px;
     margin-right: 400px;
   }
 }
@@ -149,29 +149,33 @@ body {
   height: 40px;
   fill: #000;
 }
-@media screen and (max-width: 1300px) {
+.header__nav {
+  display: none;
+}
+@media screen and (min-width: 1300px) {
   .header__nav {
-    display: none;
+    display: flex;
+    align-items: center;
   }
 }
 .header__nav-list {
   display: none;
   margin-left: auto;
-  margin-top: 15px;
 }
 @media screen and (min-width: 708px) {
   .header__nav-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 60px;
   }
 }
 .header__nav-item {
-  margin-bottom: 5px;
   position: relative;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.14;
+  line-height: 1;
   letter-spacing: 0.28px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.8);
@@ -198,7 +202,15 @@ body {
   transform: scale(1);
 }
 
+@media screen and (min-width: 1300px) {
+  .hero__info {
+    margin-left: 110px;
+  }
+}
 .hero__subtitle, .hero__duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
   font-size: 14px;
@@ -207,7 +219,6 @@ body {
 .hero > .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 708px) {
@@ -218,6 +229,7 @@ body {
 @media screen and (min-width: 1300px) {
   .hero > .container {
     justify-content: flex-start;
+    align-items: center;
     gap: 600px;
   }
 }
@@ -236,7 +248,7 @@ body {
 .hero__order__btn {
   border: none;
   background-color: #DF3D3A;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
   padding: 19px 113px;
   font-size: 16px;
 }
@@ -267,8 +279,8 @@ body {
   }
 }
 @media screen and (min-width: 1300px) {
-  .hero__img > img {
-    margin-left: 110px;
+  .hero__img {
+    margin-right: 110px;
   }
 }
 
@@ -1508,6 +1520,98 @@ body {
 @media screen and (min-width: 1300px) {
   .feedback__img {
     height: 524px;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 32px;
+}
+@media screen and (min-width: 708px) {
+  .product {
+    gap: 0;
+  }
+}
+.product__order__btn {
+  border: none;
+  background-color: #DF3D3A;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 19px 113px;
+  font-size: 16px;
+}
+.product__title {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 708px) {
+  .product__title {
+    margin-bottom: 32px;
+  }
+}
+.product__list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+@media screen and (min-width: 708px) {
+  .product__list {
+    margin-bottom: 52px;
+  }
+}
+.product__list__item {
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.product__list__item > p {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+.product__list__item > button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+.product__list__item > button > svg {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 708px) {
+  .product__list .actions {
+    margin-bottom: 40px;
+  }
+}
+.product__list__cost {
+  width: 283px;
+  height: 65px;
+  color: #DF3D3A;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 708px) {
+  .product > .product-info > img {
+    margin-bottom: 52px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .product > .product-info > img {
+    position: absolute;
+    left: 720px;
+    bottom: 147px;
   }
 }
 
