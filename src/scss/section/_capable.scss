@@ -17,11 +17,13 @@
     letter-spacing: 0.48px;
     text-transform: uppercase;
     margin-bottom: 32px;
+    display: flex;
+    width: 250px;
     flex-wrap: wrap;
-
     @media screen and (min-width: 708px) {
       font-size: 30px;
       width: 412px;
+      display: block;
     }
     @media screen and (min-width: 1300px) {
       font-size: 54px;
@@ -29,7 +31,7 @@
     }
   }
   &__text {
-    color: $link-color;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -45,11 +47,25 @@
       font-size: 20px;
     }
   }
-&__list{
-  gap: 16px;
-  @media screen and (min-width:1300px) {
-    gap: 20px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (min-width: 1300px) {
+      gap: 20px;
+    }
   }
-}
-
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 13px;
+      background-color: $accent-color;
+      border-radius: 50%;
+    }
+  }
 }

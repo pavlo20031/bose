@@ -405,12 +405,15 @@ body {
   letter-spacing: 0.48px;
   text-transform: uppercase;
   margin-bottom: 32px;
+  display: flex;
+  width: 250px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 708px) {
   .capable__title {
     font-size: 30px;
     width: 412px;
+    display: block;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -441,12 +444,27 @@ body {
   }
 }
 .capable__list {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 @media screen and (min-width: 1300px) {
   .capable__list {
     gap: 20px;
   }
+}
+.capable__item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.capable__item::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #DF3D3A;
+  border-radius: 50%;
 }
 
 .luxury {
