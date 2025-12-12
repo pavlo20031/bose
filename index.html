@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bose/assets/index-4ff4ec35.css">
+    <link rel="stylesheet" href="/bose/assets/index-0174428d.css">
   </head>
   <body>
 
@@ -41,7 +41,7 @@
         <li class="header__nav-item">Payment and delivery</li>
       </ul>
     </nav>
-    <button class="header__menu-btn">
+    <button data-mobile-open class="header__menu-btn">
       <svg>
         <use href="../img/symbol-defs.svg#menu" ></use>
       </svg>
@@ -416,17 +416,19 @@
   </div>
 </footer>
 
-    <div class="menu">
+    <div data-mobile class="menu is-hidden">
+  <div class="menu__box">
   <a href="../index.html" class="menu__logo">
     <svg class="menu__text">
       <use href="../img/symbol-defs.svg#bose"></use>
     </svg>
   </a>
-  <button type="button" class="menu__btn">
+  <button data-mobile-close type="button" class="menu__btn">
     <svg class="menu__icon">
       <use href="../img/symbol-defs.svg#hrestik"></use>
     </svg>
   </button>
+  </div>
   <ul class="menu__list">
     <li class="menu__item">
       <a href="../index.html" class="menu__link">Characteristics</a>
