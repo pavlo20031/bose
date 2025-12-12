@@ -404,33 +404,48 @@ body {
   line-height: 120%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 708px) {
   .capable__title {
     font-size: 30px;
+    width: 412px;
   }
 }
 @media screen and (min-width: 1300px) {
   .capable__title {
     font-size: 54px;
+    width: 600px;
   }
 }
-.capable__title__text {
+.capable__text {
   color: rgba(255, 255, 255, 0.8);
-  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
 }
 @media screen and (min-width: 708px) {
-  .capable__title__text {
+  .capable__text {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1300px) {
-  .capable__title__text {
+  .capable__text {
     font-size: 20px;
+  }
+}
+.capable__list {
+  gap: 16px;
+}
+@media screen and (min-width: 1300px) {
+  .capable__list {
+    gap: 20px;
   }
 }
 
@@ -458,10 +473,14 @@ body {
   line-height: 120%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  margin-bottom: 32px;
+  width: 300px;
 }
 @media screen and (min-width: 708px) {
   .luxury__title {
     font-size: 30px;
+    width: 360px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -475,6 +494,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 1300px) {
   .luxury__subtitle {
@@ -487,15 +507,34 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  margin-bottom: 42px;
 }
 @media screen and (min-width: 708px) {
   .luxury__text {
     font-size: 16px;
+    width: 310px;
+    margin-right: 60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .luxury__text {
     font-size: 20px;
+  }
+}
+.luxury__img {
+  width: 280px;
+  height: 293px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 708px) {
+  .luxury__img {
+    width: 768px;
+    height: 293px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .luxury__list {
+    display: flex;
   }
 }
 
@@ -1109,7 +1148,7 @@ body {
   align-items: center;
   padding: 9px 12px;
 }
-@media screen and (min-with: 1300px) {
+@media screen and (min-width: 1300px) {
   .faq__btn {
     padding: 11px 15px;
   }
@@ -1119,7 +1158,7 @@ body {
   height: 14px;
   fill: #E7E7E7;
 }
-@media screen and (min-with: 1300px) {
+@media screen and (min-width: 1300px) {
   .faq__icon {
     width: 12px;
     height: 20px;
@@ -1178,12 +1217,6 @@ body {
   .faq__item {
     padding: 0 0 26px 0;
   }
-}
-.faq__div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: start;
 }
 @media screen and (min-width: 708px) {
   .faq__item {
@@ -1408,4 +1441,67 @@ body {
 }
 .footer__lister {
   align-items: end;
+}
+
+.menu {
+  padding: 30px 20px 0 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+  opacity: 1;
+}
+@media screen and (min-width: 708px) {
+  .menu {
+    padding: 49px 60px 100px 60px;
+    height: 387px;
+  }
+}
+.menu__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+}
+.menu__text {
+  width: 98px;
+  height: 12px;
+  fill: #E7E7E7;
+}
+.menu__btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.menu__icon {
+  width: 18px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.8);
+}
+.menu__link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+@media screen and (min-width: 708px) {
+  .menu__link {
+    font-size: 16px;
+  }
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
