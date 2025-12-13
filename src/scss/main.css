@@ -278,11 +278,6 @@ body {
     margin-left: 110px;
   }
 }
-@media screen and (min-width: 1300px) {
-  .hero__img {
-    margin-right: 110px;
-  }
-}
 
 .premium {
   padding-top: 52px;
@@ -1526,12 +1521,23 @@ body {
 .product {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   gap: 32px;
+}
+@media screen and (min-width: 1300px) {
+  .product-info {
+    margin-left: 200px;
+  }
 }
 @media screen and (min-width: 708px) {
   .product {
     gap: 0;
+  }
+}
+@media screen and (min-width: 708px) {
+  .product > .cotanier {
+    margin-left: 110px;
   }
 }
 .product__order__btn {
@@ -1610,7 +1616,7 @@ body {
 @media screen and (min-width: 1300px) {
   .product > .product-info > img {
     position: absolute;
-    left: 720px;
+    left: 820px;
     bottom: 147px;
   }
 }

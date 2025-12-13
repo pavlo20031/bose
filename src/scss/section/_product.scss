@@ -3,12 +3,22 @@
 .product {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   gap: 32px;
+  &-info{
+   @media screen and (min-width: 1300px){
+    margin-left: 200px;
+   }
+  }//a
   @media screen and (min-width: 708px) {
     gap: 0;
   }
+  & > .cotanier {
+  @media screen and (min-width: 708px) {
 
+  margin-left: 110px;
+  }}
   &__order__btn {
     border: none;
     background-color: #DF3D3A;
@@ -91,7 +101,7 @@
     }
     @media screen and (min-width: 1300px) {
       position: absolute;
-      left: 720px;
+      left: 820px;
       bottom: 147px;
     }
   }
