@@ -35,6 +35,7 @@ address {
 input,
 textarea {
   display: block;
+  border: none;
 }
 
 input,
@@ -1267,14 +1268,28 @@ body {
   }
 }
 
+.feedback {
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 708px) {
+  .feedback {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .feedback {
+    padding-bottom: 1000px;
+  }
+}
 .feedback__title {
-  color: #e7e7e7;
+  color: #E7E7E7;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  margin-top: 16px;
 }
 @media screen and (min-width: 1300px) {
   .feedback__title {
@@ -1289,11 +1304,13 @@ body {
   }
 }
 .feedback__textar {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  margin-bottom: 40px;
+  margin-top: 32px;
 }
 @media screen and (min-width: 1300px) {
   .feedback__textar {
@@ -1313,6 +1330,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  width: 100%;
 }
 @media screen and (min-width: 1300px) {
   .feedback__input {
@@ -1326,6 +1348,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 @media screen and (min-width: 1300px) {
   .feedback__texter {
@@ -1336,31 +1363,43 @@ body {
 .feedback__checkbox {
   width: 30px;
   height: 28px;
+  margin-right: 24px;
 }
 @media screen and (min-width: 1300px) {
   .feedback__checkbox {
     height: 27.9px;
   }
 }
-.feedback__text {
-  color: rgba(255, 255, 255, 0.8);
+.feedback__label {
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1300px) {
-  .feedback__text {
+  .feedback__label {
     font-size: 16px;
     line-height: 160%;
   }
 }
 .feedback__link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  margin-left: 9px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 @media screen and (min-width: 1300px) {
   .feedback__link {
@@ -1377,6 +1416,8 @@ body {
   letter-spacing: 0.32px;
   text-transform: uppercase;
   padding: 20px 120px;
+  background-color: transparent;
+  border: 1px solid #DF3D3A;
 }
 @media screen and (min-width: 1300px) {
   .feedback__button {
@@ -1388,6 +1429,20 @@ body {
 @media screen and (min-width: 708px) {
   .feedback__button {
     padding: 20px 126px;
+  }
+}
+.feedback__img {
+  width: 100%;
+  height: 200px;
+}
+@media screen and (min-width: 708px) {
+  .feedback__img {
+    height: 360px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .feedback__img {
+    height: 524px;
   }
 }
 
