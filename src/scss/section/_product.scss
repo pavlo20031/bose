@@ -1,24 +1,23 @@
 @use "../base/variables" as *;
 
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  gap: 32px;
-  &-info{
-   @media screen and (min-width: 1300px){
-    margin-left: 200px;
-   }
-  }//a
+
   @media screen and (min-width: 708px) {
     gap: 0;
   }
-  & > .cotanier {
-  @media screen and (min-width: 708px) {
 
-  margin-left: 110px;
-  }}
+  &-info {
+    @media screen and (min-width: 1300px) {
+      margin-left: 200px;
+    }
+  }
+
+  & > .container {
+    position: relative;
+    gap: 32px;
+
+  }
+
   &__order__btn {
     border: none;
     background-color: #DF3D3A;
@@ -33,32 +32,40 @@
     font-size: 30px;
     line-height: 120%;
     text-transform: uppercase;
-    @media screen and (min-width: 708px) {
 
+    @media screen and (min-width: 708px) {
       margin-bottom: 32px;
     }
   }
 
   &__list {
-    width: 400px;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
     @media screen and (min-width: 708px) {
       margin-bottom: 52px;
     }
+
+    @media screen and (min-width: 1300px) {
+      width: 400px;
+    }
+
     &__item {
       border-top: 2px solid rgba(255, 255, 255, 0.4);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: row;
 
       & > p {
         color: #FFFFFFCC;
-        font-weight: 400;
         font-size: 16px;
         line-height: 125%;
+
+        @media screen and (min-width: 708px) {
+          width: 270px;
+          height: 20px;
+        }
       }
 
       & > button {
@@ -67,12 +74,11 @@
         border: none;
         background-color: transparent;
 
-        & > svg {
+        svg {
           width: 20px;
           height: 20px;
         }
       }
-
     }
 
     .actions {
@@ -89,20 +95,21 @@
       font-size: 30px;
       line-height: 120%;
       text-transform: uppercase;
-
     }
-
   }
-}
-.product{
-  & > .product-info > img{
+
+  &__img {
     @media screen and (min-width: 708px) {
       margin-bottom: 52px;
     }
+
     @media screen and (min-width: 1300px) {
       position: absolute;
       left: 820px;
-      bottom: 147px;
+      bottom: -30px;
+      width: 700px;
+      height: 664px;
+
     }
   }
 }
