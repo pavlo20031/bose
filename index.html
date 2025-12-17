@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bose/assets/index-dd006a09.css">
+    <link rel="stylesheet" href="/bose/assets/index-70ec368b.css">
   </head>
   <body>
 
@@ -60,15 +60,22 @@
         Up to 20 hours of playback
       </p>
       <h2 class="hero__title">Headphones Bose NC 700</h2>
-      <button type="button" class="hero__order__btn">Order</button>
+      <button class="hero__order__btn" type="button">Order</button>
     </div>
 
-    <div class="hero__image">
-      <img alt="Bose NC 700 headphones" src="">
-    </div>
+
+    <picture>
+      <source media="(min-width: 1300px  )"
+              srcset="../img/dekstop/phone_ears-des@1x.webp 1x, ../img/dekstop/phone_ears-des@2x.webp 2x ">
+      <source media="(min-width: 708px  )"
+              srcset="../img/tablet/phone_ears-tablet@1x.webp 1x, ../img/tablet/phone_ears-tablet@2x.webp 2x ">
+      <source media="(max-width: 300px  )"
+              srcset="../img/mobile/phone_ears-mobile@1x.webp 1x, ../img/mobile/phone_ears-mobile@2x.webp 2x ">
+      <img src="../img/dekstop/phone_ears-des@1x.webp" alt="phone_ears">
+    </picture>
+
   </div>
 </section>
-
     <section class="premium">
   <div class="container">
     <div class="premium__box">
@@ -360,36 +367,67 @@
 </section>
 
     <section class="product">
-  <div class="product-info"><!--left-->
-    <h2>Bose NC 700</h2>
+  <div class="product-info container"><!--left-->
+    <div>
+    <h2 class="product__title">Bose NC 700</h2>
+    <picture >
+      <source media="(min-width: 1300px  )"
+              srcset="../img/dekstop/products-black-des@1x.webp 1x, ../img/dekstop/products-black-des@2x.webp 2x ">
+      <source media="(min-width: 708px  )"
+              srcset="../img/tablet/products-black-tablet@1x.webp 1x, ../img/tablet/products-black-tablet@2x.webp 2x ">
+      <source media="(max-width: 300px  )"
+              srcset="../img/mobile/products-black-mobile@1x.webp 1x, ../img/mobile/products-black-mobile@2x.webp 2x ">
+      <img src="../img/dekstop/products-black-des@1x.webp" alt="phone_ears" class="product__img">
+    </picture>
+
+
+
     <ul class="actions">
       <li>
-        <button></button>
+        <button class="product__btn__black">
+          <div></div>
+        </button>
       </li>
       <li>
-        <button></button>
-      </li>
-    </ul>
-    <ul>
-      <li><p>Availability in stores</p>
-        <button></button>
-      </li>
-      <li><p>Characteristics</p>
-        <button></button>
-      </li>
-      <li><p>Payment and delivery methods</p>
-        <button></button>
-      </li>
-    </ul>
-    <h3>14999 UAH</h3>
-    <button>Order</button>
-  </div>
+        <button class="product__btn__white">
+          <div>
 
-  <div class="product-image"><!--right-->
-    <img alt="Bose NC 700 headphones" src="">
+          </div>
+        </button>
+      </li>
+    </ul>
+    <ul class="product__list">
+      <li class="product__list__item">
+        <p>Availability in stores</p>
+        <button>
+          <svg fill="none" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.707034 21L20.707 1M20.707 1L0.707035 0.999999M20.707 1L20.707 21" stroke="#DF3D3A"
+                  stroke-width="2" />
+          </svg>
+        </button>
+      </li>
+      <li class="product__list__item"><p>Characteristics</p>
+        <button>
+          <svg fill="none" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.707034 21L20.707 1M20.707 1L0.707035 0.999999M20.707 1L20.707 21" stroke="#DF3D3A"
+                  stroke-width="2" />
+          </svg>
+        </button>
+      </li>
+      <li class="product__list__item"><p>Payment and delivery methods</p>
+        <button>
+          <svg fill="none" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.707034 21L20.707 1M20.707 1L0.707035 0.999999M20.707 1L20.707 21" stroke="#DF3D3A"
+                  stroke-width="2" />
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <h3 class="product__list__cost">14999 UAH</h3>
+    <button class="product__order__btn">Order</button>
+  </div>
   </div>
 </section>
-
     <section class="feedback">
     <div class="container">
         <picture>
