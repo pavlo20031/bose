@@ -1,5 +1,4 @@
 @use "../base/variables" as *;
-@use "../base/variables" as *;
 
 .header {
   margin-left: auto;
@@ -27,9 +26,9 @@
 
   &__logo {
     font-weight: 700;
-    line-height: 1.38;
+    line-height: 1;
     font-size: 24px;
-    letter-spacing: 0.78px;
+    letter-spacing: 1px;
     margin-right: auto;
     fill: $menu-color;
     & > svg {
@@ -40,7 +39,7 @@
     }
     @media screen and (min-width: 708px) {
       font-size: 26px;
-      letter-spacing: 0.78px;
+      letter-spacing: 1px;
       margin-right: 400px;
     }
 
@@ -67,33 +66,37 @@
       width: 40px;
       height: 40px;
       fill: #000;
-    }
+    }//a
   }
 
   &__nav {
-    @media screen and (max-width: 1300px) {
-      display: none;
+    display: none;
+    @media screen and (min-width: 1300px) {
+      display: flex;
+      align-items: center;
     }
 
     &-list {
+
       display: none;
       margin-left: auto;
-      margin-top: 15px;
       @media screen and (min-width: 708px) {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 60px;
       }
     }
     &-item {
-      margin-bottom: 5px;
       position: relative;
       font-size: 16px;
       font-weight: 400;
-      line-height: 1.14;
+      line-height: 1;
       letter-spacing: 0.28px;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       color: #FFFFFFCC;
+
 
       &--current {
         color: $accent-color;
