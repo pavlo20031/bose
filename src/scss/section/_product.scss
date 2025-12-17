@@ -1,11 +1,12 @@
 @use "../base/variables" as *;
 
 .product {
-
+  @media screen and (min-width: 1300px) {
+    height: 664px;
+  }
   @media screen and (min-width: 708px) {
     gap: 0;
   }
-
   .product__btn__black {
     & > div {
       background-color: transparent;
@@ -81,26 +82,22 @@
     }
   }
   //aa
-  &-info {
-    @media screen and (min-width: 1300px) {
-      margin-left: 200px;
-    }
-  }
 
+
+  &-info{
+    height: 664px;
+  }
   & > .container {
+
+    //a
     position: relative;
     display: flex;
     gap: 32px;
     flex-direction: column;
     @media screen and (min-width: 1300px) {
-
+      position: relative;
       display: flex;
-      align-items: center;
-      flex-direction: row;
-      gap: 0;
-      height: 664px;
-
-      //a
+      gap: 32px;
     }
 
   }
