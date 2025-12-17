@@ -1,15 +1,12 @@
 @use '../base/variables' as *;
 
 .luxury {
-  padding-top: 52px;
   padding-bottom: 52px;
 
   @media screen and (min-width: 708px) {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
   @media screen and (min-width: 1300px) {
-    padding-top: 170px;
     padding-bottom: 170px;
   }
 

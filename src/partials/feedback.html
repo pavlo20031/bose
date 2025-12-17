@@ -1,6 +1,14 @@
 <section class="feedback">
     <div class="container">
-        <img class="feedback__img" src="../img/dekstop/feedback-des@1x.webp" alt="">
+        <picture>
+            <source srcset="../img/dekstop/feedback-des@1x.webp 1x, ../img/dekstop/feedback-des@2x.webp 2x"
+                media="(min-width: 1300px)">
+            <source srcset="../img/tablet/feedback-tablet@1x.webp 1x, ../img/tablet/feedback-tablet@2x.webp 2x"
+                media="(min-width: 708px)">
+            <source srcset="../img/mobile/feedback-mobile@1x.webp 1x, ../img/mobile/feedback-mobile@2x.webp 2x" 
+                media="(max-width: 707px)">
+        <img class="feedback__img" src="../img/dekstop/feedback-des@1x.webp" alt="img">
+        </picture>
         <ul class="feedback__box">
             <li class="feedback__item">
                 <h2 class="feedback__title">Feedback</h2>

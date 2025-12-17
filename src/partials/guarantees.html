@@ -1,6 +1,14 @@
 <section class="guarantees">
     <div class="container">
-        <img class="guarantees__img" src="../img/dekstop/guarantees-des@1x.webp" alt="">
+        <picture>
+            <source srcset="../img/dekstop/guarantees-des@1x.webp 1x, ../img/dekstop/guarantees-des@2x.webp 2x"
+                media="(min-width: 1300px)">
+            <source srcset="../img/tablet/guarantees-tablet@1x.webp 1x, ../img/tablet/guarantees-tablet@2x.webp 2x"
+                media="(min-width: 708px)">
+            <source srcset="../img/mobile/guarantees-mobile@1x.webp 1x, ../img/mobile/guarantees-mobile@2x.webp 2x" 
+                media="(max-width: 707px)">
+            <img class="guarantees__img" src="../img/dekstop/guarantees-des@1x.webp" alt="">
+        </picture>
         <div>
             <h2 class="guarantees__title">Guarantees</h2>
             <ul class="guarantees__list">
