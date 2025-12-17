@@ -2,12 +2,11 @@
 @use "../base/variables" as *;
 
 .header {
-  margin-left: auto;
   padding: 16px 0;
   margin-left: 0;
 
   & > .container {
-    margin-top: 5px;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,7 +77,6 @@
     &-list {
       display: none;
       margin-left: auto;
-      margin-top: 15px;
       @media screen and (min-width: 708px) {
         display: flex;
         flex-direction: row;
