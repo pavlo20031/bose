@@ -71,8 +71,8 @@
   }
 
   &__nav {
-    @media screen and (max-width: 1300px) {
-      display: none;
+    @media screen and (max-width: 1299px) {
+      display: none;//a
     }
 
     &-list {
