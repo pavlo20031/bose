@@ -1,7 +1,15 @@
 @use "../base/variables" as *;
 
 .hero{
+  &__info{
+    @media screen and (min-width: 1300px) {
+      margin-left: 110px;
+    }
+  }
   &__subtitle, &__duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFFCC;
     font-weight: 400;
     font-size: 14px;
@@ -10,14 +18,14 @@
   & > .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+
     @media screen and (min-width: 708px) {
       flex-direction: row;
     }
     @media screen and (min-width: 1300px) {
       justify-content: flex-start;
-      gap: calc(1300px - 700px);
+      align-items: center;
     }
   }
 
@@ -33,9 +41,13 @@
   }
 
   &__order__btn {
+    margin-bottom: 32px;
+    @media screen and (min-width: 708px) {
+      margin-bottom: 0;
+    }
     border: none;
     background-color: #DF3D3A;
-    color: #FFFFFF;
+    color: #FFFFFFCC;
     padding: 19px 113px;
     font-size: 16px;
     @media screen and (min-width: 1300px) {
@@ -54,14 +66,11 @@
     @media screen and (min-width: 708px) {
       font-size: 42px;
       margin-bottom: 40px;
+
     }
     @media screen and (min-width: 1300px) {
       margin-left: 110px;
     }
   }
-  &__img > img{
-    @media screen and (min-width: 1300px) {
-      margin-left: 110px;
-    }
-  }
+
 }
