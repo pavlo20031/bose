@@ -239,18 +239,16 @@ body {
 }
 .hero__order__btn {
   margin-bottom: 32px;
-}
-@media screen and (min-width: 708px) {
-  .hero__order__btn {
-    margin-bottom: 0;
-  }
-}
-.hero__order__btn {
   border: none;
   background-color: #DF3D3A;
   color: rgba(255, 255, 255, 0.8);
   padding: 19px 113px;
   font-size: 16px;
+}
+@media screen and (min-width: 708px) {
+  .hero__order__btn {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1300px) {
   .hero__order__btn {
@@ -989,7 +987,7 @@ body {
   display: block;
   width: 34px;
   height: 25px;
-  background-image: url(../../img/lapki.png);
+  background-image: url(//img/lapki.png);
   margin-bottom: 24px;
   margin-top: 50px;
 }
@@ -1049,7 +1047,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .reviews > .container {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
@@ -1343,26 +1341,27 @@ body {
     padding-bottom: 100px;
   }
 }
-.product .product__btn__black > div {
-  background-color: transparent;
-  border: 2px solid #ff0000;
-}
 .product .product__btn__black {
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: transparent;
 }
-.product .product__btn__white > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: transparent;
+.product .product__btn__black > div {
+  background-color: transparent;
+  border: 2px solid #ff0000;
 }
 .product .product__btn__white {
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.7);
 }
+.product .product__btn__white > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: transparent;
+}
 .product .actions {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 1300px) {
   .product .actions {
@@ -1371,19 +1370,20 @@ body {
 }
 .product .actions > li > button {
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 .product .actions > li > button > div {
   padding: 6px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
 }
 @media screen and (min-width: 708px) {
   .product .actions > li > button > div {
     padding: 8px;
   }
-}
-.product .actions > li > button > div {
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
 }
 @media screen and (min-width: 708px) {
   .product .actions > li > button > div {
@@ -1397,10 +1397,6 @@ body {
     height: 54px;
   }
 }
-.product .actions > li > button {
-  width: 44px;
-  height: 44px;
-}
 @media screen and (min-width: 708px) {
   .product .actions > li > button {
     width: 58px;
@@ -1412,12 +1408,6 @@ body {
     width: 70px;
     height: 70px;
   }
-}
-.product .actions > li > button {
-  border-radius: 50%;
-}
-.product .actions {
-  margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
   .product .actions {
@@ -1458,15 +1448,13 @@ body {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1300px) {
   .product__title {
     font-size: 54px;
   }
-}
-.product__title {
-  line-height: 120%;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 708px) {
   .product__title {
@@ -1705,7 +1693,8 @@ body {
   margin-left: 9px;
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -1898,6 +1887,4 @@ body {
 .is-hidden {
   pointer-events: none;
   opacity: 0;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
