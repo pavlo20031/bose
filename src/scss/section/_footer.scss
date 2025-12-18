@@ -74,5 +74,9 @@
 
   &__lister {
     align-items: end;
+
+    @media screen and (min-width:708px) {
+      align-items: start;
+    }
   }
 }
