@@ -1443,6 +1443,7 @@ body {
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
   .product__list {
