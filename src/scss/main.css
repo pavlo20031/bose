@@ -1382,8 +1382,8 @@ body {
 }
 .product .actions > li > button > div {
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 @media screen and (min-width: 708px) {
   .product .actions > li > button > div {
@@ -1477,6 +1477,7 @@ body {
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
   .product__list {
