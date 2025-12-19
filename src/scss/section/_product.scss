@@ -2,11 +2,11 @@
 
 .product {
   padding-bottom: 88px;
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1320px) {
     height: 664px;
     padding-bottom: 171px;
   }
-  @media screen and (min-width: 708px) {
+  @media screen and (min-width: 678px) {
     gap: 0;
     padding-bottom: 100px;
   }
@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       gap: 20px;
     }
 
@@ -45,17 +45,17 @@
 
         & > div {
           padding: 6px;
-          @media screen and (min-width: 708px) {
+          @media screen and (min-width: 678px) {
             padding: 8px;
           }
           border-radius: 50%;
           width: 28px;
           height: 28px;//a
-          @media screen and (min-width: 708px) {
+          @media screen and (min-width: 678px) {
             width: 42px;
             height: 42px;
           }
-          @media screen and (min-width: 1300px) {
+          @media screen and (min-width: 1320px) {
             width: 54px;
             height: 54px;
           }
@@ -63,11 +63,11 @@
 
         width: 44px;
         height: 44px;
-        @media screen and (min-width: 708px) {
+        @media screen and (min-width: 678px) {
           width: 58px;
           height: 58px;
         }
-        @media screen and (min-width: 1300px) {
+        @media screen and (min-width: 1320px) {
           width: 70px;
           height: 70px;
         }
@@ -75,10 +75,10 @@
     }
 
     margin-bottom: 32px;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       margin-bottom: 40px;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       margin-bottom: 50px;
     }
   }
@@ -86,7 +86,7 @@
 
 
   &-info{
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       height: 664px
     }
   }
@@ -97,7 +97,7 @@
     display: flex;
     gap: 32px;
     flex-direction: column;
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       position: relative;
       display: flex;
       gap: 32px;
@@ -117,13 +117,13 @@
     color: $menu-color;
     font-weight: 600;
     font-size: 30px;
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       font-size: 54px;
     }
     line-height: 120%;
     text-transform: uppercase;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       margin-bottom: 32px;
     }
   }
@@ -133,11 +133,11 @@
     flex-direction: column;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     margin-bottom: 32px;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       margin-bottom: 52px;
     }
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       width: 400px;
     }
 
@@ -153,7 +153,7 @@
         font-size: 16px;
         line-height: 125%;
 
-        @media screen and (min-width: 708px) {
+        @media screen and (min-width: 678px) {
           width: 270px;
           height: 20px;
         }
@@ -173,7 +173,7 @@
     }
 
     .actions {
-      @media screen and (min-width: 708px) {
+      @media screen and (min-width: 678px) {
         margin-bottom: 40px;
       }
     }
@@ -190,12 +190,12 @@
   }
 
   &__img {
-    @media screen and (min-width: 708px) and (max-width: 1299px){
+    @media screen and (min-width: 678px) and (max-width: 1319px){
       margin-bottom: 52px;
       background-color: $color-img-bg;
     }
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       width: 700px;
       height: 664px;
       position: absolute;
