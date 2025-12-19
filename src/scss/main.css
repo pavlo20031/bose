@@ -100,15 +100,16 @@ body {
   align-items: center;
 }
 .header__logo {
+  fill: rgba(255, 255, 255, 0.8);
   font-weight: 700;
   line-height: 1.38;
   font-size: 24px;
   letter-spacing: 0.78px;
   margin-right: auto;
-  fill: rgba(255, 255, 255, 0.8);
 }
 .header__logo > svg {
   width: 130px;
+  height: 15px;
 }
 @media screen and (min-width: 708px) {
   .header__logo {
@@ -159,7 +160,6 @@ body {
   }
 }
 .header__nav-item {
-  margin-bottom: 5px;
   position: relative;
   font-size: 16px;
   font-weight: 400;
@@ -229,14 +229,14 @@ body {
 }
 @media screen and (min-width: 708px) {
   .hero > .container > picture > img {
-    margin-left: auto;
-    width: 700px;
-    height: 598px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1300px) {
   .hero > .container > picture > img {
     margin-left: 65px;
+    width: 700px;
+    height: 598px;
   }
 }
 .hero__order__btn {
@@ -994,7 +994,7 @@ body {
   display: block;
   width: 34px;
   height: 25px;
-  background-image: url(../../img/lapki.png);
+  background-image: url(//img/lapki.png);
   margin-bottom: 24px;
   margin-top: 50px;
 }
@@ -1054,7 +1054,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .reviews > .container {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 }

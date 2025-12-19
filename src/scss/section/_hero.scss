@@ -37,13 +37,13 @@
   }
   & > .container > picture > img {
     @media screen and (min-width: 708px) {
-      margin-left: auto;
-      width: 700px;
-      height: 598px;
+
+      margin-left: 0;
     }
     @media screen and (min-width: 1300px) {
       margin-left: 65px;
-
+      width: 700px;
+      height: 598px;
     }
   }
   &__order__btn {
