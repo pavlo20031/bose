@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   @media screen and (min-width: 708px) {
     padding: 21px 0;
@@ -25,17 +25,15 @@
   }
 
   &__logo {
+    fill: $menu-color;
     font-weight: 700;
     line-height: 1.38;
     font-size: 24px;
     letter-spacing: 0.78px;
     margin-right: auto;
-    fill: $menu-color;
     & > svg {
       width: 130px;
-    }
-    @media screen and (min-width: 1300px) {
-      margin-left: 60px;
+      height: 15px;
     }
     @media screen and (min-width: 708px) {
       font-size: 26px;
@@ -84,7 +82,6 @@
       }
     }
     &-item {
-      margin-bottom: 5px;
       position: relative;
       font-size: 16px;
       font-weight: 400;
