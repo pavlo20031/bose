@@ -16,7 +16,7 @@
     flex-direction: column;
 
     @media screen and (min-width:1300px) {
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
     }
   }
