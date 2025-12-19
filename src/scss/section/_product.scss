@@ -71,8 +71,6 @@
           width: 70px;
           height: 70px;
         }
-
-        border-radius: 50%;
       }
     }
 
@@ -192,15 +190,16 @@
   }
 
   &__img {
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 708px) and (max-width: 1299px){
       margin-bottom: 52px;
+      background-color: $color-img-bg;
     }
 
     @media screen and (min-width: 1300px) {
       width: 700px;
       height: 664px;
       position: absolute;
-      left: 500px;
+      left: 600px;
       top: 0;
 
     }

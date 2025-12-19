@@ -1,11 +1,7 @@
 @use "../base/variables" as *;
 
 .hero{
-  &__info{
-    @media screen and (min-width: 1300px) {
-      margin-left: 110px;
-    }
-  }
+
   &__subtitle, &__duration {
     display: flex;
     align-items: center;
@@ -25,7 +21,7 @@
     }
     @media screen and (min-width: 1300px) {
       justify-content: flex-start;
-      align-items: center;
+      align-items: start;
     }
   }
 
@@ -39,7 +35,17 @@
       margin-bottom: 105px;
     }
   }
+  & > .container > picture > img {
+    @media screen and (min-width: 708px) {
+      margin-left: auto;
+      width: 700px;
+      height: 598px;
+    }
+    @media screen and (min-width: 1300px) {
+      margin-left: 65px;
 
+    }
+  }
   &__order__btn {
     margin-bottom: 32px;
     @media screen and (min-width: 708px) {
@@ -69,7 +75,10 @@
 
     }
     @media screen and (min-width: 1300px) {
+      width: 400px;
       margin-left: 110px;
+      font-size:50px;
+      margin-bottom: 85px;
     }
   }
 

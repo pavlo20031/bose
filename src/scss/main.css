@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media screen and (min-width: 708px) {
   .header {
@@ -109,11 +109,6 @@ body {
 }
 .header__logo > svg {
   width: 130px;
-}
-@media screen and (min-width: 1300px) {
-  .header__logo {
-    margin-left: 60px;
-  }
 }
 @media screen and (min-width: 708px) {
   .header__logo {
@@ -195,11 +190,6 @@ body {
   transform: scale(1);
 }
 
-@media screen and (min-width: 1300px) {
-  .hero__info {
-    margin-left: 110px;
-  }
-}
 .hero__subtitle, .hero__duration {
   display: flex;
   align-items: center;
@@ -222,7 +212,7 @@ body {
 @media screen and (min-width: 1300px) {
   .hero > .container {
     justify-content: flex-start;
-    align-items: center;
+    align-items: start;
   }
 }
 .hero__subtitle {
@@ -235,6 +225,18 @@ body {
 @media screen and (min-width: 708px) {
   .hero__duration {
     margin-bottom: 105px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .hero > .container > picture > img {
+    margin-left: auto;
+    width: 700px;
+    height: 598px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .hero > .container > picture > img {
+    margin-left: 65px;
   }
 }
 .hero__order__btn {
@@ -275,7 +277,10 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .hero__title {
+    width: 400px;
     margin-left: 110px;
+    font-size: 50px;
+    margin-bottom: 85px;
   }
 }
 
@@ -1379,9 +1384,6 @@ body {
     height: 70px;
   }
 }
-.product .actions > li > button {
-  border-radius: 50%;
-}
 .product .actions {
   margin-bottom: 32px;
 }
@@ -1498,9 +1500,10 @@ body {
   line-height: 120%;
   text-transform: uppercase;
 }
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 708px) and (max-width: 1299px) {
   .product__img {
     margin-bottom: 52px;
+    background-color: #1D1D1D;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -1508,7 +1511,7 @@ body {
     width: 700px;
     height: 664px;
     position: absolute;
-    left: 500px;
+    left: 600px;
     top: 0;
   }
 }
