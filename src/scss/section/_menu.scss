@@ -1,6 +1,7 @@
 @use '../base/variables' as *;
 
 .menu {
+  width: 100vh;
   padding: 30px 20px 0 20px;
   position: fixed;
   left: 0;
