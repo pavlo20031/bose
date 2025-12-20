@@ -1379,9 +1379,6 @@ body {
 }
 .product .actions > li > button > div {
   padding: 6px;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
 }
 @media screen and (min-width: 678px) {
   .product .actions > li > button > div {
