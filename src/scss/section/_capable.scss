@@ -1,10 +1,11 @@
 @use '../base/variables' as *;
 
 .capable {
-  padding-top: 52px;
   padding-bottom: 52px;
-  @media screen and (min-width: 678px) {
-    padding-top: 249px;
+  @media screen and (min-width: 708px) {
+    padding-bottom: 100px;
+  }
+    @media screen and (min-width: 708px) {
     padding-bottom: 170px;
   }
 
@@ -40,8 +41,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
-    @media screen and (min-width: 678px) {
+    width: 236px;
+    @media screen and (min-width: 708px) {
       font-size: 16px;
+      width: 100%;
     }
     @media screen and (min-width: 1320px) {
       font-size: 20px;
@@ -51,7 +54,16 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    @media screen and (min-width: 1320px) {
+    @media screen and (min-width:1300px) {
+      flex-direction: row;
+      gap: 220px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (min-width: 1300px) {
       gap: 20px;
     }
   }
@@ -67,5 +79,8 @@
       background-color: $accent-color;
       border-radius: 50%;
     }
+  }
+  &__item:last-child {
+    align-items: start;
   }
 }
