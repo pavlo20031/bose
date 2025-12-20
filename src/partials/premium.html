@@ -22,6 +22,11 @@
       </li>
     </ul>
     </div>
-      <img class="premium__img" src="../img/dekstop/premium-des@1x.webp" alt="" />
+    <picture>
+      <source srcset="/img/dekstop/premium-des@1x.webp 1x, /img/dekstop/premium-des@2x.webp 2x" media="(min-width:1320px)">
+      <source srcset="/img/tablet/premium-tablet@1x.webp 1x, /img/tablet/premium-tablet@2x.webp 2x" media="(min-width:678px)">
+      <source src="/img/mobile/premium-mobile@1x.webp 1x, /img/mobile/premium-mobile@2x.webp 2x" media="(max-width:677px)">
+      <img class="premium__img" src="/img/dekstop/premium-des@1x.webp" alt="women" />
+      </picture>
   </div>
 </section>
