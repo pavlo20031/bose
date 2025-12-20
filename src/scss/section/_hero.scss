@@ -16,10 +16,10 @@
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       flex-direction: row;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       justify-content: flex-start;
       align-items: start;
     }
@@ -31,16 +31,16 @@
   &__duration {
     width: 110px;
     margin-bottom: 32px;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       margin-bottom: 105px;
     }
   }
   & > .container > picture > img {
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width:678px) {
 
       margin-left: 0;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       margin-left: 65px;
       width: 700px;
       height: 598px;
@@ -48,7 +48,7 @@
   }
   &__order__btn {
     margin-bottom: 32px;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       margin-bottom: 0;
     }
     border: none;
@@ -56,7 +56,7 @@
     color: #FFFFFFCC;
     padding: 19px 113px;
     font-size: 16px;
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       margin-left: 110px;
     }
   }
@@ -69,12 +69,12 @@
     width: 304px;
     height: 68px;
     margin-bottom: 32px;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 42px;
       margin-bottom: 40px;
 
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       width: 400px;
       margin-left: 110px;
       font-size:50px;
