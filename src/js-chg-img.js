@@ -32,7 +32,7 @@ function changeImg(mode) {
     p.style.border = 'none';
     pp.style.border = '2px solid #ff0000';
   }
-
+//a
 
 
 
