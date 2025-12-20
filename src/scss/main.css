@@ -1402,6 +1402,9 @@ body {
     height: 54px;
   }
 }
+.product .actions > li > button > div {
+  border-radius: 50%;
+}
 .product .actions > li > button {
   width: 44px;
   height: 44px;
