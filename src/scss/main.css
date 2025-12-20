@@ -400,12 +400,15 @@ body {
 }
 
 .capable {
-  padding-top: 52px;
   padding-bottom: 52px;
 }
 @media screen and (min-width: 678px) {
   .capable {
-    padding-top: 249px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .capable {
     padding-bottom: 170px;
   }
 }
@@ -445,10 +448,12 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  width: 236px;
 }
 @media screen and (min-width: 678px) {
   .capable__text {
     font-size: 16px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -463,6 +468,17 @@ body {
 }
 @media screen and (min-width: 1320px) {
   .capable__list {
+    flex-direction: row;
+    gap: 220px;
+  }
+}
+.capable__items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 1300px) {
+  .capable__items {
     gap: 20px;
   }
 }
@@ -479,20 +495,20 @@ body {
   background-color: #DF3D3A;
   border-radius: 50%;
 }
+.capable__item:last-child {
+  align-items: start;
+}
 
 .luxury {
-  padding-top: 52px;
   padding-bottom: 52px;
 }
 @media screen and (min-width: 678px) {
   .luxury {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1320px) {
   .luxury {
-    padding-top: 170px;
     padding-bottom: 170px;
   }
 }
@@ -571,7 +587,7 @@ body {
     width: 1440px;
   }
 }
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 708px) {
   .luxury__list {
     display: flex;
   }
@@ -1843,7 +1859,6 @@ body {
 }
 
 .menu {
-  width: 100vh;
   padding: 30px 20px 0 20px;
   position: fixed;
   left: 0;
@@ -1853,7 +1868,6 @@ body {
   height: 100%;
   background-color: #191919;
   opacity: 1;
-  box-shadow: 0 20px 80px 0 #000;
 }
 @media screen and (min-width: 708px) {
   .menu {
@@ -1905,6 +1919,4 @@ body {
 .is-hidden {
   pointer-events: none;
   opacity: 0;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
