@@ -1332,19 +1332,14 @@ body {
   }
 }
 
-.product {
-  padding-bottom: 88px;
-}
 @media screen and (min-width: 1320px) {
   .product {
-    height: 664px;
-    padding-bottom: 171px;
+    height: 674px;
   }
 }
 @media screen and (min-width: 678px) {
   .product {
     gap: 0;
-    padding-bottom: 100px;
   }
 }
 .product .product__btn__black > div {
