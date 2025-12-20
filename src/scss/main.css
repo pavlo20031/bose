@@ -241,16 +241,18 @@ body {
 }
 .hero__order__btn {
   margin-bottom: 32px;
-  border: none;
-  background-color: #DF3D3A;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 19px 113px;
-  font-size: 16px;
 }
 @media screen and (min-width: 678px) {
   .hero__order__btn {
     margin-bottom: 0;
   }
+}
+.hero__order__btn {
+  border: none;
+  background-color: #DF3D3A;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 19px 113px;
+  font-size: 16px;
 }
 @media screen and (min-width: 1320px) {
   .hero__order__btn {
@@ -659,7 +661,7 @@ body {
 }
 @media screen and (min-width: 678px) {
   .bose__img {
-    width: 100%;
+    width: 450px;
     height: 400px;
     margin-top: 0;
   }
@@ -1345,27 +1347,26 @@ body {
     padding-bottom: 100px;
   }
 }
-.product .product__btn__black {
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  background-color: transparent;
-}
 .product .product__btn__black > div {
   background-color: transparent;
   border: 2px solid #ff0000;
 }
-.product .product__btn__white {
+.product .product__btn__black {
   border: 2px solid rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
 }
 .product .product__btn__white > div {
   background-color: rgba(255, 255, 255, 0.8);
   border: transparent;
 }
+.product .product__btn__white {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
+}
 .product .actions {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  margin-bottom: 32px;
 }
 @media screen and (min-width: 1320px) {
   .product .actions {
@@ -1374,8 +1375,6 @@ body {
 }
 .product .actions > li > button {
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
 }
 .product .actions > li > button > div {
   padding: 6px;
@@ -1384,6 +1383,11 @@ body {
   .product .actions > li > button > div {
     padding: 8px;
   }
+}
+.product .actions > li > button > div {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
 }
 @media screen and (min-width: 678px) {
   .product .actions > li > button > div {
@@ -1397,6 +1401,13 @@ body {
     height: 54px;
   }
 }
+.product .actions > li > button > div {
+  border-radius: 50%;
+}
+.product .actions > li > button {
+  width: 44px;
+  height: 44px;
+}
 @media screen and (min-width: 678px) {
   .product .actions > li > button {
     width: 58px;
@@ -1408,6 +1419,9 @@ body {
     width: 70px;
     height: 70px;
   }
+}
+.product .actions {
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 678px) {
   .product .actions {
@@ -1448,13 +1462,15 @@ body {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-size: 30px;
-  line-height: 120%;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 1320px) {
   .product__title {
     font-size: 54px;
   }
+}
+.product__title {
+  line-height: 120%;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 678px) {
   .product__title {
@@ -1695,8 +1711,7 @@ body {
   margin-left: 9px;
   text-decoration-line: underline;
   text-decoration-style: solid;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -1890,4 +1905,6 @@ body {
 .is-hidden {
   pointer-events: none;
   opacity: 0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
