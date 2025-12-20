@@ -1,14 +1,11 @@
 @use "../base/variables" as *;
 
 .product {
-  padding-bottom: 88px;
   @media screen and (min-width: 1320px) {
-    height: 664px;
-    padding-bottom: 171px;
+    height: 674px;
   }
   @media screen and (min-width: 678px) {
     gap: 0;
-    padding-bottom: 100px;
   }
   .product__btn__black {
     & > div {
