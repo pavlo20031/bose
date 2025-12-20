@@ -9,9 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bose/assets/index-7cb5d948.css">
+    <link rel="stylesheet" href="/bose/assets/index-eea33eec.css">
   </head>
   <body>
 
@@ -228,7 +229,7 @@
             <source srcset="/bose/assets/brand-chels-des@1x-41510fca.webp 1x, /bose/assets/brand-chels-des@2x-78e9a998.webp 2x" media="(min-width:1320px)">
             <source srcset="/bose/assets/brand-chels-tablet@1x-840d0ab3.webp 1x, /bose/assets/brand-chels-tablet@2x-3b0748b3.webp 2x" media="(min-width:678px)">
             <source srcset="/bose/assets/brand-chels-mobile@1x-4b0832a9.webp 1x, /bose/assets/brand-chels-mobile@2x-080bee04.webp 2x" media="(max-width:677px)">
-          <img class="brand__img" src="/bose/assets/brand-chels-des@1x-41510fca.webp" alt="foto" />
+          <img data-aos="fade-up" class="brand__img" src="/bose/assets/brand-chels-des@1x-41510fca.webp" alt="foto" />
           </picture>
         </div>
         <div>
@@ -248,9 +249,12 @@
                 <source srcset="/bose/assets/brand-chel-des@1x-ba42816f.webp 1x, /bose/assets/brand-chel-des@2x-5f6fccce.webp 2x" media="(min-width:1320px)">
                 <source srcset="/bose/assets/brand-chel-tablet@1x-6bbbd84e.webp 1x, /bose/assets/brand-chel-tablet@2x-86ac5f7d.webp 2x" media="(min-width:678px)">
               <source srcset="/bose/assets/brand-chel-mobile@1x-c1c754ce.webp 1x, /bose/assets/brand-chel-mobile@2x-2b7ac730.webp 2x" media="(max-width:677px)">
-            <img class="brand__images" src="/bose/assets/brand-chel-des@1x-ba42816f.webp" alt="foto" />
+            <img data-aos="fade-down" class="brand__images" src="/bose/assets/brand-chel-des@1x-ba42816f.webp" alt="foto" />
             </picture>
             <div class="brand__box">
+              <svg class="brand__icon">
+                <use href="/bose/assets/symbol-defs-a90feb99.svg#lapki"></use>
+              </svg>
               <p class="brand__head">
                 Never stop dreaming. Always dream of the best, and think about
                 how to achieve it.
@@ -265,9 +269,9 @@
     <section class="reviews">
   <div class="container">
     <h2 class="reviews__title">reviews</h2>
-    <iframe class="reviews__video" src="https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=OgVsUxmSV9GIiQXG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe data-aos="zoom-in" class="reviews__video" src="https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=OgVsUxmSV9GIiQXG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div>
-      <h2 class="reviews__titles">reviews</h2>
+      <h2 data-aos="zoom-out" class="reviews__titles">reviews</h2>
       <a href="https://www.youtube.com/watch?v=VqP11Ma_2Fk" class="reviews__link">Bose Сorporation</a>
       <p class="reviews__subtitle">
         Critically acclaimed for their powerful noise cancelling, astonishing
@@ -293,7 +297,7 @@
 
     <section class="faq">
   <div class="container">
-    <h2 class="faq__title">FAQ</h2>
+    <h2 data-aos="flip-up" class="faq__title">FAQ</h2>
     <ul class="faq__list">
       <li class="faq__item">
         <div class="faq__div">
@@ -503,5 +507,9 @@
 
 
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
