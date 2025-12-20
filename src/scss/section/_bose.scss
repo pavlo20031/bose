@@ -3,11 +3,11 @@
 .bose {
   padding-top: 52px;
   padding-bottom: 52px;
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1320px) {
     padding-top: 170px;
     padding-bottom: 170px;
   }
-  @media screen and (min-width: 708px) {
+  @media screen and (min-width: 678px) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -16,11 +16,11 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       flex-direction: row;
       justify-content: space-between;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
     gap: 239px;
     }
   }
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     color: #e7e7e7;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 54px;
     }
   }
@@ -42,11 +42,11 @@
     font-size: 14px;
     color: rgba(250, 250, 250, 0.8);
     margin-top: 20px;
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       width: 380px;
       
     }
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 20px;
       margin-top: 16px;
       margin-top: 27px;
@@ -61,7 +61,7 @@
     margin-top: 32px;
     margin-bottom: 16px;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 28px;
       line-height: 125%;
       margin-top: 43px;
@@ -72,13 +72,12 @@
    width: 100%;
    height: 100%;
    margin-top: 32px;
-   @media screen and (min-width: 708px) {
-    width: 100%;
+   @media screen and (min-width: 678px) {
+    width: 450px;
     height: 400px;
     margin-top: 0;
-    margin-left: 60px;
    }
-   @media screen and (min-width: 1300px) {
+   @media screen and (min-width: 1320px) {
     height: 100%;
     width: 100%;
     margin-left: 0;
