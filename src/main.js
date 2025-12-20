@@ -17,10 +17,10 @@ function sleep(ms) {
 function changeImg(mode) {
   if (mode === 'black') {
     console.log('b');
-    f.srcset = 'assets/dekstop/products-black-des@1x.webp 1x, assets/dekstop/products-black-des@2x.webp 2x ';
-    s.srcset = 'assets/tablet/products-black-tablet@1x.webp 1x, assets/tablet/products-black-tablet@2x.webp 2x ';
-    t.srcset = 'assets/mobile/products-black-mobile@1x.webp 1x, assets/mobile/products-black-mobile@2x.webp 2x ';
-    img.src = 'assets/dekstop/products-black-des@1x.webp'
+    f.srcset = '/src/img/dekstop/products-black-des@1x.webp 1x, /src/img/dekstop/products-black-des@2x.webp 2x ';
+    s.srcset = '/src/img/tablet/products-black-tablet@1x.webp 1x, /src/img/tablet/products-black-tablet@2x.webp 2x ';
+    t.srcset = '/src/img/mobile/products-black-mobile@1x.webp 1x, /src/img/mobile/products-black-mobile@2x.webp 2x ';
+    img.src = '/src/img/dekstop/products-black-des@1x.webp'
     pp.style.border = 'none';
     p.style.border = '2px solid #ff0000';
   }
