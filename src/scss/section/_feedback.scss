@@ -2,13 +2,16 @@
 
 .feedback {
   padding-bottom: 72px;
+  padding-top: 88px;
 
   @media screen and (min-width: 1320px) {
     padding-bottom: 170px;
+    padding-top: 170px;
   }
 
   @media screen and (min-width: 678px) {
     padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   &__box {
@@ -50,13 +53,15 @@
     letter-spacing: 0.48px;
     text-transform: uppercase;
     margin-top: 16px;
-    @media screen and (min-width: 1320px) {
-      font-size: 54px;
-      letter-spacing: 1.08px;
-    }
+
     @media screen and (min-width: 678px) {
       font-size: 30px;
       letter-spacing: 0.6px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      font-size: 54px;
+      letter-spacing: 1.08px;
     }
   }
   &__textar {
@@ -76,6 +81,14 @@
       font-weight: 600;
     }
   }
+
+  &__form{
+
+    @media screen and (min-width:1320px) {
+          width: 510px;
+    }
+  }
+
   &__input {
     color: $formtext-color;
     font-size: 16px;
@@ -94,6 +107,7 @@
     }
   }
   &__texter {
+    resize: none;
     color: $formtext-color;
     font-size: 16px;
     font-style: normal;
@@ -161,14 +175,14 @@
     line-height: normal;
     letter-spacing: 0.32px;
     text-transform: uppercase;
-    padding: 20px 120px;
+    padding: 20px 117px;
     background-color: transparent;
     border: 1px solid $accent-color;
 
     @media screen and (min-width: 1320px) {
       font-size: 20px;
       letter-spacing: 0.4px;
-
+      width: 100%;
       padding: 22px 229px;
     }
     @media screen and (min-width: 678px) {
