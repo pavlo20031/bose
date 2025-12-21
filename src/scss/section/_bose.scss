@@ -1,14 +1,11 @@
 @use '../base/variables' as *;
 
 .bose {
-  padding-top: 52px;
   padding-bottom: 52px;
   @media screen and (min-width: 1320px) {
-    padding-top: 170px;
     padding-bottom: 170px;
   }
   @media screen and (min-width: 678px) {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 

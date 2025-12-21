@@ -3,9 +3,6 @@
 .hero{
 
   &__subtitle, &__duration {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #FFFFFFCC;
     font-weight: 400;
     font-size: 14px;
@@ -47,13 +44,21 @@
   }
   &__order__btn {
     margin-bottom: 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    &:is(:hover, :focus){
+      background-color: $hover-color;
+    }
+
     @media screen and (min-width: 678px) {
       margin-bottom: 0;
     }
     border: none;
     background-color: #DF3D3A;
     color: #FFFFFFCC;
-    padding: 19px 113px;
+    padding: 19px 117px;
     font-size: 16px;
     @media screen and (min-width: 1320px) {
       margin-left: 110px;
@@ -65,10 +70,11 @@
     font-size: 34px;
     line-height: 100%;
     text-transform: uppercase;
-    width: 304px;
+    width: 234px;
     height: 68px;
     margin-bottom: 32px;
     @media screen and (min-width: 678px) {
+      width: 289px;
       font-size: 42px;
       margin-bottom: 40px;
 
