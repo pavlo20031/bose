@@ -13,17 +13,17 @@
     padding-bottom: 249px;
   }
 
-  & > .container{
-display: flex;
-flex-direction: column;
-align-items: start;
-justify-content: center;
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 
-@media screen and (min-width:678px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    @media screen and (min-width: 678px) {
+      flex-direction: row-reverse;
+      // justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -40,14 +40,13 @@ justify-content: center;
     @media screen and (min-width: 678px) {
       font-size: 30px;
       letter-spacing: 0.6px;
-width: 294.0px;
+      width: 294px;
     }
     @media screen and (min-width: 1320px) {
       font-size: 54px;
       letter-spacing: 1.08px;
       width: 500px;
       margin-bottom: 50px;
-
     }
   }
 
@@ -75,29 +74,23 @@ width: 294.0px;
 
     @media screen and (min-width: 678px) {
       font-size: 16px;
+      width: 294px;
     }
 
     @media screen and (min-width: 1320px) {
       font-size: 20px;
       margin-bottom: 40px;
       width: 550px;
-
-
-    @media screen and (min-width: 1320px) {
-      font-size: 20px;
     }
   }
-
-  
-}
-&__img {
+  &__img {
     width: 280px;
     height: 293px;
     @media screen and (min-width: 678px) {
       width: 354px;
       height: 540px;
       order: -1;
-      margin-left:-30px;
+      margin-left: -30px;
       margin-right: 60px;
     }
     @media screen and (min-width: 1320px) {
