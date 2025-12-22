@@ -213,6 +213,11 @@ body {
 .hero__subtitle {
   margin-bottom: 16px;
 }
+@media screen and (min-width: 678px) {
+  .hero__subtitle {
+    width: 253px;
+  }
+}
 .hero__duration {
   width: 110px;
   margin-bottom: 32px;

@@ -23,6 +23,9 @@
 
   &__subtitle{
     margin-bottom: 16px;
+    @media screen and (min-width: 678px) {
+      width: 253px;
+    }
   }
   &__duration {
     width: 110px;
