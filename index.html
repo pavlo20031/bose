@@ -12,14 +12,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bose/assets/index-b0ef2bb2.css">
+    <link rel="stylesheet" href="/bose/assets/index-bdbcc3e1.css">
   </head>
   <body>
 
     <!-- Loads the specified .html file -->
     <header class="header">
   <div class="container">
-    <a class="header__logo" href="#">
+    <a class="header__logo" href="../index.html">
       <svg class="header__logo-img">
         <use href="/bose/assets/symbol-defs-a90feb99.svg#bose"></use>
       </svg>
@@ -181,19 +181,24 @@
                 at the same time.</p>
         </div>
         <picture>
-            <source srcset="../img/dekstop/bose-des@1x.webp 1x, ../img/dekstop/bose-des@2x.webp 2x"
+            <source srcset="/img/dekstop/bose-des@1x.webp 1x, ../img/dekstop/bose-des@2x.webp 2x"
                 media="(min-width: 1300px)">
-            <source srcset="../img/tablet/bose-tablet@1x.webp 1x, ../img/tablet/bose-tablet@2x.webp 2x"
+            <source srcset="/img/tablet/bose-tablet@1x.webp 1x, ../img/tablet/bose-tablet@2x.webp 2x"
                 media="(min-width: 708px)">
-            <source srcset-="../img/mobile/bose-mobile@1x.webp 1x, ../img/mobile/bose-mobile@2x.webp 2x"
+            <source srcset-="/img/mobile/bose-mobile@1x.webp 1x, ../img/mobile/bose-mobile@2x.webp 2x"
                 media="(max-width: 707px)">
-            <img class="bose__img" src="../img/dekstop/bose-des@1x.webp" alt="bose">
+            <img class="bose__img" src="/bose/assets/bose-des@1x-014d6f17.webp" alt="bose">
         </picture>
     </div>
 </section>
     <section class="guarantees">
     <div class="container">
-        <img class="guarantees__img" src="../img/dekstop/guarantees-des@1x.webp" alt="">
+        <picture>
+            <source media="(min-width: 1320px)" srcset="/bose/assets/guarantees-des@1x-8cb2078e.webp 1x, /bose/assets/guarantees-des@2x-537e00d5.webp 2x">
+            <source media="(min-width: 678px)" srcset="/bose/assets/guarantees-tablet@1x-1313586d.webp 1x, /bose/assets/guarantees-tablet@2x-ebecf35c.webp 2x">
+            <source media="(max-width: 677px)" srcset="/bose/assets/guarantees-mobile@1x-a80c92fc.webp 1x, /bose/assets/guarantees-mobile@2x-127fbcaf.webp 2x">
+        <img class="guarantees__img" src="/bose/assets/guarantees-des@1x-8cb2078e.webp" alt="gues">
+        </picture>
         <div>
             <h2 class="guarantees__title">Guarantees</h2>
             <ul class="guarantees__list">
@@ -360,7 +365,7 @@
 </section>
 
     <section class="product">
-  <div class="product-info container"><!--left-->
+  <div class="product-info container">
     <div>
       <h2 class="product__title">Bose NC 700</h2>
       <picture>
@@ -432,7 +437,12 @@
 </section>
     <section class="feedback">
     <div class="container">
-        <img class="feedback__img" src="../img/dekstop/feedback-des@1x.webp" alt="chelixa">
+        <picture>
+            <source media="(min-width: 1320px)" srcset="/bose/assets/feedback-des@1x-e89a6f39.webp 1x, /bose/assets/feedback-des@2x-12109df8.webp 2x">
+            <source media="(min-width: 678px)" srcset="/bose/assets/feedback-tablet@1x-5a5ba96c.webp 1x, /bose/assets/feedback-tablet@2x-5db470da.webp 2x">
+            <source media="(max-width: 677px)" srcset="/bose/assets/feedback-mobile@1x-4c25061e.webp 1x, /bose/assets/feedback-mobile@2x-92706bf5.webp 2x">
+        <img class="feedback__img" src="/bose/assets/feedback-des@1x-e89a6f39.webp" alt="chelixa">
+        </picture>
         <ul class="feedback__box">
             <li class="feedback__item">
                 <h2 class="feedback__title">Feedback</h2>
@@ -440,12 +450,12 @@
             </li>
             <li class="feedback__item">
                 <form class="feedback__form">
-                    <input class="feedback__input" placeholder="Your name" type="text">
-                    <input class="feedback__input" placeholder="Your e-mail" type="email">
-                    <textarea class="feedback__texter" placeholder="Send us a message"></textarea>
+                    <input required class="feedback__input" placeholder="Your name" type="text">
+                    <input required class="feedback__input" placeholder="Your e-mail" type="email">
+                    <textarea required class="feedback__texter" placeholder="Send us a message"></textarea>
                     <label class="feedback__label">
-                        <input class="feedback__checkbox" type="checkbox">
-                        I agree to the <a class="feedback__link" href="">privacy policy</a>
+                        <input required class="feedback__checkbox" type="checkbox">
+                        I agree to the <a class="feedback__link" href="../index.html">privacy policy</a>
                     </label>
                     <button class="feedback__button">send</button>
                 </form>
@@ -459,25 +469,25 @@
       <li>
         <ul class="footer__lists">
           <li class="footer__item">
-            <a href="#" class="footer__link">Characteristics</a>
+            <a href="../index.html" class="footer__link">Characteristics</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">History</a>
+            <a href="../index.html" class="footer__link">History</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Reviews</a>
+            <a href="../index.html" class="footer__link">Reviews</a>
           </li>
         </ul>
       </li>
       <li>
         <ul class="footer__lists footer__lister">
           <li class="footer__item">
-            <a href="#" class="footer__link">Payment and delivery</a>
+            <a href="../index.html" class="footer__link">Payment and delivery</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Store addresses</a>
+            <a href="../index.html" class="footer__link">Store addresses</a>
           </li>
-          <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+          <li class="footer__item"><a href="../index.html" class="footer__link">FAQ</a></li>
         </ul>
       </li>
     </ul>
