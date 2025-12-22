@@ -204,7 +204,15 @@ body {
   transform: scale(1);
 }
 
+@media screen and (min-width: 1300px) {
+  .hero__info {
+    margin-left: 110px;
+  }
+}
 .hero__subtitle, .hero__duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
   font-size: 14px;
@@ -222,7 +230,7 @@ body {
 @media screen and (min-width: 1320px) {
   .hero > .container {
     justify-content: flex-start;
-    align-items: start;
+    align-items: center;
   }
 }
 .hero__subtitle {
@@ -256,13 +264,17 @@ body {
 }
 .hero__order__btn {
   margin-bottom: 32px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: ease;
+}
+@media screen and (min-width: 708px) {
+  .hero__order__btn {
+    margin-bottom: 0;
+  }
+}
+.hero__order__btn {
   border: none;
   background-color: #DF3D3A;
   color: rgba(255, 255, 255, 0.8);
-  padding: 19px 117px;
+  padding: 19px 113px;
   font-size: 16px;
 }
 .hero__order__btn:is(:hover, :focus) {
@@ -299,8 +311,6 @@ body {
   .hero__title {
     width: 400px;
     margin-left: 110px;
-    font-size: 50px;
-    margin-bottom: 85px;
   }
 }
 

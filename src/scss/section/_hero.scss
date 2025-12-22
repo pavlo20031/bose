@@ -1,8 +1,15 @@
 @use "../base/variables" as *;
 
 .hero{
-
+  &__info{
+    @media screen and (min-width: 1300px) {
+      margin-left: 110px;
+    }
+  }
   &__subtitle, &__duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFFCC;
     font-weight: 400;
     font-size: 14px;
@@ -12,12 +19,12 @@
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 708px) {
       flex-direction: row;
     }
     @media screen and (min-width: 1320px) {
       justify-content: flex-start;
-      align-items: start;
+      align-items: center;
     }
   }
 
@@ -47,6 +54,7 @@
   }
   &__order__btn {
     margin-bottom: 32px;
+    @media screen and (min-width: 708px) {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: ease;
