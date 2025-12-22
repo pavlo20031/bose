@@ -40,8 +40,8 @@ function changeImg(mode,mode2) {
   );
   picc.animate(
     [
-      { transform: 'translateY(20px) rotate(0deg)', opacity: 0 },
-      { transform: 'translateY(0) rotate(360deg)', opacity: 1 }
+      { transform: 'translateY(20px) scale(0.1) rotate(0deg)', opacity: 0 },
+      { transform: 'translateY(20px) scale(1) rotate(360deg)', opacity: 1 }
     ],
     {
       duration: 600,
