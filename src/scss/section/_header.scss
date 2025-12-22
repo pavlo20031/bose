@@ -1,5 +1,4 @@
 @use "../base/variables" as *;
-@use "../base/variables" as *;
 
 .header {
   padding: 16px 0;
@@ -69,7 +68,7 @@
 
   &__nav {
     @media screen and (max-width: 1319.5px) {
-      display: none;//a
+      display: none;
     }
 
     &-list {
