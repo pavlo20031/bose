@@ -1912,7 +1912,7 @@ body {
     width: 678px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1320px) {
   .menu {
     opacity: 0;
   }
@@ -1957,10 +1957,16 @@ body {
   justify-content: center;
   gap: 24px;
 }
+.menu__item {
+  width: 100%;
+}
 
 .is-hidden {
   pointer-events: none;
   opacity: 0;
 }
-
-/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 678px) and (max-width: 677px) {
+  .is-hidden {
+    width: 678px;
+  }
+}/*# sourceMappingURL=main.css.map */
