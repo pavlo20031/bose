@@ -1946,9 +1946,6 @@ body {
   justify-content: center;
   gap: 24px;
 }
-.menu__item {
-  width: 100%;
-}
 
 .is-hidden {
   pointer-events: none;

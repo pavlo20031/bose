@@ -1,6 +1,11 @@
 <section class="feedback">
     <div class="container">
-        <img class="feedback__img" src="../img/dekstop/feedback-des@1x.webp" alt="chelixa">
+        <picture>
+            <source media="(min-width: 1320px)" srcset="/img/dekstop/feedback-des@1x.webp 1x, /img/dekstop/feedback-des@2x.webp 2x">
+            <source media="(min-width: 678px)" srcset="/img/tablet/feedback-tablet@1x.webp 1x, /img/tablet/feedback-tablet@2x.webp 2x">
+            <source media="(max-width: 677px)" srcset="/img/mobile/feedback-mobile@1x.webp 1x, /img/mobile/feedback-mobile@2x.webp 2x">
+        <img class="feedback__img" src="/img/dekstop/feedback-des@1x.webp" alt="chelixa">
+        </picture>
         <ul class="feedback__box">
             <li class="feedback__item">
                 <h2 class="feedback__title">Feedback</h2>
@@ -8,12 +13,12 @@
             </li>
             <li class="feedback__item">
                 <form class="feedback__form">
-                    <input class="feedback__input" placeholder="Your name" type="text">
-                    <input class="feedback__input" placeholder="Your e-mail" type="email">
-                    <textarea class="feedback__texter" placeholder="Send us a message"></textarea>
+                    <input required class="feedback__input" placeholder="Your name" type="text">
+                    <input required class="feedback__input" placeholder="Your e-mail" type="email">
+                    <textarea required class="feedback__texter" placeholder="Send us a message"></textarea>
                     <label class="feedback__label">
-                        <input class="feedback__checkbox" type="checkbox">
-                        I agree to the <a class="feedback__link" href="">privacy policy</a>
+                        <input required class="feedback__checkbox" type="checkbox">
+                        I agree to the <a class="feedback__link" href="../index.html">privacy policy</a>
                     </label>
                     <button class="feedback__button">send</button>
                 </form>
