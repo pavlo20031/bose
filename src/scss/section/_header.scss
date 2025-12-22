@@ -1,6 +1,20 @@
 @use "../base/variables" as *;
 @use "../base/variables" as *;
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(40deg) scale(0.7);
 
+  }
+  66%{
+    transform: rotate(-40deg) scale(0.7);
+  }
+  100%{
+    transform: rotate(0deg) ;
+  }
+}
 .header {
   padding: 16px 0;
   margin-left: 0;
@@ -25,6 +39,7 @@
   }
 
   &__logo {
+    animation: spin 1s linear 10;
     fill: $menu-color;
     font-weight: 700;
     line-height: 1.38;

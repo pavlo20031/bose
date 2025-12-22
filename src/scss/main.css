@@ -73,6 +73,20 @@ body {
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(40deg) scale(0.7);
+  }
+  66% {
+    transform: rotate(-40deg) scale(0.7);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .header {
   padding: 16px 0;
   margin-left: 0;
@@ -98,6 +112,7 @@ body {
   align-items: center;
 }
 .header__logo {
+  animation: spin 1s linear 10;
   fill: rgba(255, 255, 255, 0.8);
   font-weight: 700;
   line-height: 1.38;
