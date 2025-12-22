@@ -3,11 +3,11 @@
 .reviews {
   padding-bottom: 16px;
 
-  @media screen and (min-width: 708px) {
+  @media screen and (min-width: 678px) {
     padding-bottom: 100px;
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1320px) {
     padding-bottom: 170px;
   }
 
@@ -15,8 +15,8 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width:1300px) {
-      flex-direction: row;
+    @media screen and (min-width:1320px) {
+      flex-direction: row-reverse;
       justify-content: space-between;
     }
   }
@@ -30,11 +30,11 @@
     text-transform: uppercase;
     margin-bottom: 32px;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 30px;
     }
 
-    @media screen and (min-width:1300px) {
+    @media screen and (min-width:1320px) {
       display: none;
     }
   }
@@ -48,7 +48,7 @@
     letter-spacing: 0.48px;
     text-transform: uppercase;
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       display: block;
       font-size: 54px;
     }
@@ -58,12 +58,13 @@
     width: 100%;
     margin-bottom: 32px;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       width: 648px;
       height: 417px;
     }
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
+      order: 2;
       width: 920px;
       height: 590px;
     }
@@ -75,7 +76,7 @@
     font-weight: 600;
     line-height: 1.25;
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       font-size: 28px;
     }
   }
@@ -88,12 +89,12 @@
     margin-top: 16px;
     margin-bottom: 32px;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 16px;
       width: 530px;
     }
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       width: 258px;
       font-size: 20px;
     }
@@ -109,7 +110,7 @@
     line-height: 1.25;
     opacity: 0.2;
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       font-size: 28px;
       gap: 12px;
     }
@@ -118,7 +119,7 @@
     display: flex;
     gap: 14px;
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       gap: 12px;
     }
   }
