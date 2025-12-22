@@ -21,11 +21,11 @@
     height: 387px;
   }
 
-  @media screen and (min-width:678px) and (max-width:677px) {
-    width: 678px;
-  }
+    @media screen and (min-width:678px) and (max-width:677px) {
+      width:678px;
+    }
 
-  @media screen and (min-width:1300px) {
+  @media screen and (min-width:1320px) {
     opacity:0;
   }
 
@@ -75,9 +75,18 @@
     justify-content: center;
     gap: 24px;
   }
+
+  &__item{
+    width: 100%;
+  }
+
 }
 
 .is-hidden {
   pointer-events: none;
   opacity: 0;
+
+    @media screen and (min-width:678px) and (max-width:677px) {
+      width:678px;
+    }
 }
