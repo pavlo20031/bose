@@ -687,20 +687,21 @@ body {
 }
 .bose__img {
   width: 100%;
-  height: 100%;
   margin-top: 32px;
+  margin-left: 0;
 }
 @media screen and (min-width: 678px) {
   .bose__img {
     width: 100%;
     height: 400px;
     margin-top: 0;
+    margin-left: 15px;
   }
 }
 @media screen and (min-width: 1320px) {
   .bose__img {
-    height: 100%;
     width: 100%;
+    height: 586px;
     margin-left: 0;
   }
 }
