@@ -7,9 +7,9 @@
   @media screen and (min-width: 678px) {
     gap: 0;
   }
-  .product__btn__black {
+  &__btn__black {
     & > div {
-      background-color: transparent;
+      background-color: #000000;
       border: 2px solid #ff0000;
     }
 
@@ -17,7 +17,7 @@
     background-color: transparent;
   }
 
-  .product__btn__white {
+  &__btn__white {
     & > div {
       background-color: $menu-color;
       border: transparent;
@@ -28,7 +28,7 @@
   }
 
 
-  .actions {
+  &__actions {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -47,7 +47,7 @@
           }
           border-radius: 50%;
           width: 28px;
-          height: 28px;//a
+          height: 28px;
           @media screen and (min-width: 678px) {
             width: 42px;
             height: 42px;
@@ -80,7 +80,6 @@
       margin-bottom: 50px;
     }
   }
-  //aa
 
 
   &-info{
@@ -107,8 +106,15 @@
     border: none;
     background-color: #DF3D3A;
     color: $menu-color;
-    padding: 19px 113px;
+    padding: 19px 117px;
     font-size: 16px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    &:is(:hover, :focus){
+      background-color: $hover-color;
+    }
   }
 
   &__title {
