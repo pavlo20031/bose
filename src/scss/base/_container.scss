@@ -1,20 +1,21 @@
 .container {
-  max-width: 1320px;
-  padding: 0 10px;
-  margin: 0 auto;
-  outline: 1px solid red;
-
-  @media screen and (min-width: 300px) {
-    width: 300px;
-  }
-
-  @media screen and (min-width: 678px) {
-    width: 678px;
-    padding: 0 15px;
-  }
-
-  @media screen and (min-width: 1320px) {
-    width: 1320px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 20px;
-  }
+    outline: 1px solid red;
+
+    @media screen and (min-width:300px) {
+        width: 300px;
+        padding: 0 10px;
+    }
+
+    @media screen and (min-width:708px) {
+        width: 708px;
+        padding: 0 30px;
+    }
+
+    @media screen and (min-width:1300px) {
+        width: 1300px;
+    }
 }
