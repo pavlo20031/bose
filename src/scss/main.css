@@ -1451,7 +1451,7 @@ body {
   }
 }
 @media screen and (min-width: 1320px) {
-  .product-info {
+  .product__info {
     height: 664px;
   }
 }
@@ -1470,7 +1470,7 @@ body {
 }
 .product__order__btn {
   border: none;
-  background-color: #DF3D3A;
+  background-color: #df3d3a;
   color: rgba(255, 255, 255, 0.8);
   padding: 19px 117px;
   font-size: 16px;
@@ -1543,11 +1543,6 @@ body {
   width: 20px;
   height: 20px;
 }
-@media screen and (min-width: 678px) {
-  .product__list .actions {
-    margin-bottom: 40px;
-  }
-}
 .product__list__cost {
   width: 283px;
   height: 65px;
@@ -1556,6 +1551,11 @@ body {
   font-size: 30px;
   line-height: 120%;
   text-transform: uppercase;
+}
+@media screen and (min-width: 678px) {
+  .product__actions {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 678px) and (max-width: 1319px) {
   .product__img {
