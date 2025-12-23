@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bose/assets/index-cbfd929a.css">
+    <link rel="stylesheet" href="/bose/assets/index-e8eae563.css">
   </head>
   <body>
 
@@ -380,17 +380,26 @@
       <img src="../img/dekstop/products-black-des@1x.webp" alt="phone_ears" class="product__img">
     </picture>
 
+      <picture>
+        <source  media="(min-width: 1300px  )"
+                 srcset="/img/dekstop/products-grey-des@1x.webp 1x, /img/dekstop/products-grey-des@2x.webp 2x ">
+        <source media="(min-width: 708px  )"
+                srcset="/img/tablet/products-grey-tablet@1x.webp 1x, /img/tablet/products-grey-tablet@2x.webp 2x ">
+        <source  media="(max-width: 300px  )"
+                 srcset="/img/mobile/products-grey-mobile@1x.webp 1x, /img/mobile/products-grey-mobile@2x.webp 2x ">
+        <img src="/bose/assets/products-grey-des@1x-a04340cf.webp" alt="phone_ears" class="product__img" id="p2">
+      </picture>
 
 
-    <ul class="actions">
-      <li>
-        <button class="product__btn__black">
-          <div></div>
-        </button>
-      </li>
-      <li>
-        <button class="product__btn__white">
-          <div>
+      <ul class="product__actions" id="actions">
+        <li>
+          <button class="product__btn__black" id="product__btn__black">
+            <div id="p1"></div>
+          </button>
+        </li>
+        <li>
+          <button class="product__btn__white" id="product__btn__white">
+            <div id="p2">
 
           </div>
         </button>
