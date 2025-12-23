@@ -1,20 +1,21 @@
 @use "../base/variables" as *;
 
 .header {
+  margin-left: auto;
   padding: 16px 0;
   margin-left: 0;
 
   & > .container {
-
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
-  @media screen and (min-width: 678px) {
+  @media screen and (min-width: 708px) {
     padding: 21px 0;
   }
-  @media screen and (min-width: 1320px) {
+  @media screen and (min-width: 1300px) {
     padding: 26px 0;
   }
 
@@ -24,19 +25,19 @@
   }
 
   &__logo {
-
-    animation: scaleAnim 3s ease-in-out infinite;
-    fill: $menu-color;
     font-weight: 700;
     line-height: 1;
     font-size: 24px;
     letter-spacing: 1px;
     margin-right: auto;
+    fill: $menu-color;
     & > svg {
       width: 130px;
-      height: 15px;
     }
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 1300px) {
+      margin-left: 60px;
+    }
+    @media screen and (min-width: 708px) {
       font-size: 26px;
       letter-spacing: 0.78px;
       margin-right: 400px;
@@ -58,7 +59,7 @@
       width: 40px;
       height: 40px;
     }
-    @media screen and (min-width: 1320px) {
+    @media screen and (min-width: 1300px) {
       display: none;
     }
     & .header__menu-icon {

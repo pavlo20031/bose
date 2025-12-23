@@ -1,17 +1,12 @@
 @use "../base/variables" as *;
-@keyframes scaleAnim {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(0.8); }
-  100% { transform: scale(1); }
-}
+
 .product {
-  @media screen and (min-width: 1320px) {
-    height: 674px;
-  }
-  @media screen and (min-width: 678px) {
+
+  @media screen and (min-width: 708px) {
     gap: 0;
   }
-  &__btn__black {
+
+  .product__btn__black {
     & > div {
       background-color: transparent;
       border: 2px solid #ff0000;
@@ -21,7 +16,7 @@
     background-color: transparent;
   }
 
-  &__btn__white {
+  .product__btn__white {
     & > div {
       background-color: $menu-color;
       border: transparent;
@@ -32,11 +27,11 @@
   }
 
 
-  &__actions {
+  .actions {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    @media screen and (min-width: 1320px) {
+    @media screen and (min-width: 1300px) {
       gap: 20px;
     }
 
@@ -46,7 +41,7 @@
 
         & > div {
           padding: 6px;
-          @media screen and (min-width: 678px) {
+          @media screen and (min-width: 708px) {
             padding: 8px;
           }
           border-radius: 50%;
@@ -56,31 +51,32 @@
             width: 42px;
             height: 42px;
           }
-          @media screen and (min-width: 1320px) {
+          @media screen and (min-width: 1300px) {
             width: 54px;
             height: 54px;
           }
-          border-radius: 50%;
         }
 
         width: 44px;
         height: 44px;
-        @media screen and (min-width: 678px) {
+        @media screen and (min-width: 708px) {
           width: 58px;
           height: 58px;
         }
-        @media screen and (min-width: 1320px) {
+        @media screen and (min-width: 1300px) {
           width: 70px;
           height: 70px;
         }
+
+        border-radius: 50%;
       }
     }
 
     margin-bottom: 32px;
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 708px) {
       margin-bottom: 40px;
     }
-    @media screen and (min-width: 1320px) {
+    @media screen and (min-width: 1300px) {
       margin-bottom: 50px;
     }
   }
@@ -92,17 +88,21 @@
       height: 664px
     }
   }
+
   & > .container {
-
-
     position: relative;
     display: flex;
     gap: 32px;
     flex-direction: column;
-    @media screen and (min-width: 1320px) {
-      position: relative;
+    @media screen and (min-width: 1300px) {
+
       display: flex;
-      gap: 32px;
+      align-items: center;
+      flex-direction: row;
+      gap: 0;
+      height: 664px;
+
+      //a
     }
 
   }
@@ -111,28 +111,21 @@
     border: none;
     background-color: #DF3D3A;
     color: $menu-color;
-    padding: 19px 117px;
+    padding: 19px 113px;
     font-size: 16px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: ease;
-
-    &:is(:hover, :focus){
-      background-color: $hover-color;
-    }
   }
 
   &__title {
     color: $menu-color;
     font-weight: 600;
     font-size: 30px;
-    @media screen and (min-width: 1320px) {
+    @media screen and (min-width: 1300px) {
       font-size: 54px;
     }
     line-height: 120%;
     text-transform: uppercase;
 
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 708px) {
       margin-bottom: 32px;
     }
   }
@@ -141,12 +134,12 @@
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-    margin-bottom: 32px;
-    @media screen and (min-width: 678px) {
+
+    @media screen and (min-width: 708px) {
       margin-bottom: 52px;
     }
 
-    @media screen and (min-width: 1320px) {
+    @media screen and (min-width: 1300px) {
       width: 400px;
     }
 
@@ -155,14 +148,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
+
       & > p {
         color: #FFFFFFCC;
         font-size: 16px;
         line-height: 125%;
 
-        @media screen and (min-width: 678px) {
+        @media screen and (min-width: 708px) {
           width: 270px;
           height: 20px;
         }
@@ -182,7 +174,7 @@
     }
 
     .actions {
-      @media screen and (min-width: 678px) {
+      @media screen and (min-width: 708px) {
         margin-bottom: 40px;
       }
     }
@@ -199,16 +191,16 @@
   }
 
   &__img {
-    @media screen and (min-width: 678px) and (max-width: 1319px){
+    @media screen and (min-width: 708px) {
       margin-bottom: 52px;
-      background-color: $color-img-bg;
     }
-    @media screen and (min-width: 1320px) {
+
+    @media screen and (min-width: 1300px) {
       width: 700px;
       height: 664px;
       position: absolute;
-      left: 600px;
-      top: 0;//a
+      left: 500px;
+      top: 0;
 
     }
   }

@@ -10,26 +10,11 @@
   height: 100%;
   background-color: $background-color;
   opacity: 1;
-  box-shadow: 0 20px 80px 0 #000;
 
-  @media screen and (min-width:300px) and (max-width:299px) {
-    width: 300px;
-  }
-
-  @media screen and (min-width:678px) {
+  @media screen and (min-width:708px) {
     padding: 49px 60px 100px 60px;
     height: 387px;
   }
-
-    @media screen and (min-width:678px) and (max-width:677px) {
-      width:678px;
-    }
-
-  @media screen and (min-width:1320px) {
-    opacity:0;
-  }
-
-
 
   &__box{
     display: flex;
@@ -80,8 +65,4 @@
 .is-hidden {
   pointer-events: none;
   opacity: 0;
-
-    @media screen and (min-width:678px) and (max-width:677px) {
-      width:678px;
-    }
 }
