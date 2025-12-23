@@ -1,22 +1,35 @@
 @use "../base/variables" as *;
 @use "../base/variables" as *;
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(40deg) scale(0.7);
 
+  }
+  66%{
+    transform: rotate(-40deg) scale(0.7);
+  }
+  100%{
+    transform: rotate(0deg) ;
+  }
+}
 .header {
-  margin-left: auto;
   padding: 16px 0;
   margin-left: 0;
 
   & > .container {
-    margin-top: 5px;
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
-  @media screen and (min-width: 708px) {
+  @media screen and (min-width: 678px) {
     padding: 21px 0;
   }
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1320px) {
     padding: 26px 0;
   }
 
@@ -26,19 +39,18 @@
   }
 
   &__logo {
+    animation: spin 1s linear 10;
+    fill: $menu-color;
     font-weight: 700;
     line-height: 1.38;
     font-size: 24px;
     letter-spacing: 0.78px;
     margin-right: auto;
-    fill: $menu-color;
     & > svg {
       width: 130px;
+      height: 15px;
     }
-    @media screen and (min-width: 1300px) {
-      margin-left: 60px;
-    }
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 26px;
       letter-spacing: 0.78px;
       margin-right: 400px;
@@ -60,7 +72,7 @@
       width: 40px;
       height: 40px;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       display: none;
     }
     & .header__menu-icon {
@@ -71,22 +83,21 @@
   }
 
   &__nav {
-    @media screen and (max-width: 1300px) {
-      display: none;
+    @media screen and (max-width: 1319.5px) {
+      display: none;//a
     }
 
     &-list {
       display: none;
       margin-left: auto;
-      margin-top: 15px;
-      @media screen and (min-width: 708px) {
+      @media screen and (min-width: 678px) {
         display: flex;
         flex-direction: row;
         gap: 60px;
       }
     }
     &-item {
-      margin-bottom: 5px;
+      text-decoration: none;
       position: relative;
       font-size: 16px;
       font-weight: 400;

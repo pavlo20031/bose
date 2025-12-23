@@ -12,21 +12,21 @@
 
   &__title {
     color: $main-color;
-    font-size: 24px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 0.48px;
     text-transform: uppercase;
     margin-bottom: 32px;
-    width: 300px;
+    width: 278px;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 30px;
       width: 360px;
       margin-left: auto;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       font-size: 54px;
       width: 650px;
     }
@@ -40,9 +40,8 @@
     line-height: 125%;
     margin-bottom: 16px;
 
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       font-size: 28px;
-      // margin-left: 50px;
       width: 412px;
     }
   }
@@ -55,34 +54,37 @@
     line-height: 125%;
     margin-bottom: 42px;
 
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       font-size: 16px;
-      width: 310px;
-      margin-right: 60px;
+      width: 294px;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       font-size: 20px;
-      // margin-left: 50px;
       width: 550px;
     }
+  }
+
+  &__sub {
+    margin-bottom: 0;
   }
 
   &__img {
     width: 280px;
     height: 293px;
     margin-bottom: 32px;
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       width: 768px;
       height: 293px;
     }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1320px) {
       width: 1440px;
     }
   }
 
   &__list {
-    @media screen and (min-width: 708px) {
+    @media screen and (min-width: 678px) {
       display: flex;
+      gap: 60px;
     }
   }
 }
