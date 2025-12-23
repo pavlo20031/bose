@@ -12,17 +12,26 @@
       <img src="../img/dekstop/products-black-des@1x.webp" alt="phone_ears" class="product__img">
     </picture>
 
+      <picture>
+        <source  media="(min-width: 1300px  )"
+                 srcset="/img/dekstop/products-grey-des@1x.webp 1x, /img/dekstop/products-grey-des@2x.webp 2x ">
+        <source media="(min-width: 708px  )"
+                srcset="/img/tablet/products-grey-tablet@1x.webp 1x, /img/tablet/products-grey-tablet@2x.webp 2x ">
+        <source  media="(max-width: 300px  )"
+                 srcset="/img/mobile/products-grey-mobile@1x.webp 1x, /img/mobile/products-grey-mobile@2x.webp 2x ">
+        <img src="/img/dekstop/products-grey-des@1x.webp" alt="phone_ears" class="product__img" id="p2">
+      </picture>
 
 
-    <ul class="actions">
-      <li>
-        <button class="product__btn__black">
-          <div></div>
-        </button>
-      </li>
-      <li>
-        <button class="product__btn__white">
-          <div>
+      <ul class="product__actions" id="actions">
+        <li>
+          <button class="product__btn__black" id="product__btn__black">
+            <div id="p1"></div>
+          </button>
+        </li>
+        <li>
+          <button class="product__btn__white" id="product__btn__white">
+            <div id="p2">
 
           </div>
         </button>

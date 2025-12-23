@@ -1425,7 +1425,7 @@ body {
   background-color: transparent;
 }
 .product__btn__black > div {
-  background-color: #000000;
+  background-color: transparent;
   border: 2px solid #ff0000;
 }
 .product__btn__white {

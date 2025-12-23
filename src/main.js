@@ -58,7 +58,6 @@ function imgg (mode){
     picc.style.display = 'none';
     pp.style.border = 'none';
     p.style.border = '2px solid #ff0000';
-    pic.style.opacity = "0.5";
   }
   if (mode === "grey") {
     console.log('g');
@@ -105,4 +104,4 @@ w.addEventListener('mouseleave', () => {
     refs.modal.classList.toggle("is-hidden");
     document.body.classList.toggle("no-scroll");
   }
-})();//a
+})();
