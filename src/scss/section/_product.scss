@@ -1,4 +1,4 @@
-@use "../base/variables" as *;
+@use '../base/variables' as *;
 
 .product {
   @media screen and (min-width: 1320px) {
@@ -26,7 +26,6 @@
     border: 2px solid $menu-color;
     background-color: rgba(255, 255, 255, 0.7);
   }
-
 
   &__actions {
     display: flex;
@@ -81,15 +80,12 @@
     }
   }
 
-
-  &-info{
+  &__info {
     @media screen and (min-width: 1320px) {
-      height: 664px
+      height: 664px;
     }
   }
   & > .container {
-
-
     position: relative;
     display: flex;
     gap: 32px;
@@ -99,12 +95,11 @@
       display: flex;
       gap: 32px;
     }
-
   }
 
   &__order__btn {
     border: none;
-    background-color: #DF3D3A;
+    background-color: #df3d3a;
     color: $menu-color;
     padding: 19px 117px;
     font-size: 16px;
@@ -112,7 +107,7 @@
     transition-duration: 250ms;
     transition-timing-function: ease;
 
-    &:is(:hover, :focus){
+    &:is(:hover, :focus) {
       background-color: $hover-color;
     }
   }
@@ -153,7 +148,7 @@
       padding-top: 15px;
       padding-bottom: 15px;
       & > p {
-        color: #FFFFFFCC;
+        color: #ffffffcc;
         font-size: 16px;
         line-height: 125%;
 
@@ -176,12 +171,6 @@
       }
     }
 
-    .actions {
-      @media screen and (min-width: 678px) {
-        margin-bottom: 40px;
-      }
-    }
-
     &__cost {
       width: 283px;
       height: 65px;
@@ -193,8 +182,14 @@
     }
   }
 
+  &__actions {
+    @media screen and (min-width: 678px) {
+      margin-bottom: 40px;
+    }
+  }
+
   &__img {
-    @media screen and (min-width: 678px) and (max-width: 1319px){
+    @media screen and (min-width: 678px) and (max-width: 1319px) {
       margin-bottom: 52px;
       background-color: $color-img-bg;
     }
@@ -204,8 +199,7 @@
       height: 664px;
       position: absolute;
       left: 600px;
-      top: 0;//a
-
+      top: 0; //a
     }
   }
 }
