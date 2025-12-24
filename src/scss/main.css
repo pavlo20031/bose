@@ -98,14 +98,8 @@ body {
   }
 }
 .header {
-  padding: 16px 0;
+  padding: 29px 0 32px;
   margin-left: 0;
-}
-.header > .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 @media screen and (min-width: 678px) {
   .header {
@@ -116,6 +110,12 @@ body {
   .header {
     padding: 26px 0;
   }
+}
+.header > .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__container {
   display: flex;
@@ -342,8 +342,8 @@ body {
 }
 @media screen and (min-width: 1320px) {
   .premium {
-    padding-top: 91px;
-    padding-bottom: 249px;
+    padding-top: 170px;
+    padding-bottom: 170px;
   }
 }
 .premium > .container {

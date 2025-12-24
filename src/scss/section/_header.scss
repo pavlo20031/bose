@@ -29,8 +29,15 @@
 }
 
 .header {
-  padding: 16px 0;
+  padding: 29px 0 32px;
   margin-left: 0;
+
+    @media screen and (min-width: 678px) {
+    padding: 21px 0;
+  }
+  @media screen and (min-width: 1320px) {
+    padding: 26px 0;
+  }
 
   & > .container {
 
@@ -38,13 +45,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @media screen and (min-width: 678px) {
-    padding: 21px 0;
-  }
-  @media screen and (min-width: 1320px) {
-    padding: 26px 0;
   }
 
   &__container {
