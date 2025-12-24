@@ -12,9 +12,8 @@
   &__title {
     color: $main-color;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 120%;
+    line-height: 1.2;
     letter-spacing: 0.48px;
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -32,15 +31,9 @@
     }
   }
   &__text {
-    color: rgba(255, 255, 255, 0.8);
+    color:$link-color;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
+    line-height: 1.25;
     width: 236px;
     @media screen and (min-width: 708px) {
       font-size: 16px;
