@@ -53,7 +53,6 @@ body {
   max-width: 1320px;
   padding: 0 10px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 300px) {
   .container {
@@ -286,6 +285,11 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: ease;
+  border: none;
+  background-color: #DF3D3A;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 19px 117px;
+  font-size: 16px;
 }
 .hero__order__btn:is(:hover, :focus) {
   background-color: #B5302D;
@@ -294,13 +298,6 @@ body {
   .hero__order__btn {
     margin-bottom: 0;
   }
-}
-.hero__order__btn {
-  border: none;
-  background-color: #DF3D3A;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 19px 117px;
-  font-size: 16px;
 }
 @media screen and (min-width: 1320px) {
   .hero__order__btn {
@@ -364,9 +361,8 @@ body {
 .premium__title {
   color: #E7E7E7;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -390,9 +386,8 @@ body {
 .premium__subtitle {
   color: #E7E7E7;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 1.25;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 1320px) {
@@ -404,9 +399,8 @@ body {
 .premium__text {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 125%;
+  line-height: 1.25;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 678px) {
@@ -459,9 +453,8 @@ body {
 .capable__title {
   color: #E7E7E7;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -485,13 +478,7 @@ body {
 .capable__text {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
+  line-height: 1.25;
   width: 236px;
 }
 @media screen and (min-width: 708px) {
@@ -559,9 +546,8 @@ body {
 .luxury__title {
   color: #E7E7E7;
   font-size: 23px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -583,9 +569,8 @@ body {
 .luxury__subtitle {
   color: #E7E7E7;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 1.25;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 1320px) {
@@ -599,7 +584,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%;
+  line-height: 1.25;
   margin-bottom: 42px;
 }
 @media screen and (min-width: 678px) {
@@ -1401,26 +1386,27 @@ body {
     gap: 0;
   }
 }
-.product__btn__black > div {
-  background-color: #000000;
-  border: 2px solid #ff0000;
-}
 .product__btn__black {
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: transparent;
 }
-.product__btn__white > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: transparent;
+.product__btn__black > div {
+  background-color: #000000;
+  border: 2px solid #ff0000;
 }
 .product__btn__white {
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.7);
 }
+.product__btn__white > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: transparent;
+}
 .product__actions {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 1320px) {
   .product__actions {
@@ -1429,19 +1415,20 @@ body {
 }
 .product__actions > li > button {
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 .product__actions > li > button > div {
   padding: 6px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 @media screen and (min-width: 678px) {
   .product__actions > li > button > div {
     padding: 8px;
   }
-}
-.product__actions > li > button > div {
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
 }
 @media screen and (min-width: 678px) {
   .product__actions > li > button > div {
@@ -1455,13 +1442,6 @@ body {
     height: 54px;
   }
 }
-.product__actions > li > button > div {
-  border-radius: 50%;
-}
-.product__actions > li > button {
-  width: 44px;
-  height: 44px;
-}
 @media screen and (min-width: 678px) {
   .product__actions > li > button {
     width: 58px;
@@ -1473,9 +1453,6 @@ body {
     width: 70px;
     height: 70px;
   }
-}
-.product__actions {
-  margin-bottom: 32px;
 }
 @media screen and (min-width: 678px) {
   .product__actions {
@@ -1522,15 +1499,13 @@ body {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1320px) {
   .product__title {
     font-size: 54px;
   }
-}
-.product__title {
-  line-height: 120%;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 678px) {
   .product__title {
@@ -1780,7 +1755,8 @@ body {
   margin-left: 9px;
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -1994,6 +1970,4 @@ body {
   .is-hidden {
     width: 678px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
