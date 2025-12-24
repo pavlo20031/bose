@@ -1,20 +1,33 @@
 @use "../base/variables" as *;
-@use "../base/variables" as *;
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1) ;
+  }
+}
+
 @keyframes spin {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  10%{
+  10% {
     transform: rotate(40deg) scale(0.7);
 
   }
-  66%{
+  66% {
     transform: rotate(-40deg) scale(0.7);
   }
-  100%{
-    transform: rotate(0deg) ;
+  100% {
+    transform: rotate(0deg);
   }
 }
+
 .header {
   padding: 16px 0;
   margin-left: 0;
@@ -26,6 +39,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   @media screen and (min-width: 678px) {
     padding: 21px 0;
   }
@@ -46,10 +60,13 @@
     font-size: 24px;
     letter-spacing: 0.78px;
     margin-right: auto;
+
     & > svg {
+      animation: scale 3s 10;
       width: 130px;
       height: 15px;
     }
+
     @media screen and (min-width: 678px) {
       font-size: 26px;
       letter-spacing: 0.78px;
@@ -67,15 +84,20 @@
     align-items: center;
     justify-content: center;
     border: none;
+
     & > svg {
       fill: $menu-color;
       width: 40px;
       height: 40px;
     }
+
     @media screen and (min-width: 1320px) {
       display: none;
     }
+
     & .header__menu-icon {
+      animation: scale 3s 10;
+
       width: 40px;
       height: 40px;
       fill: #000;
@@ -84,7 +106,7 @@
 
   &__nav {
     @media screen and (max-width: 1319.5px) {
-      display: none;//a
+      display: none; //a
     }
 
     &-list {
@@ -96,6 +118,7 @@
         gap: 60px;
       }
     }
+
     &-item {
       text-decoration: none;
       position: relative;
