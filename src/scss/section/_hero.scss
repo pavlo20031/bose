@@ -1,12 +1,25 @@
 @use "../base/variables" as *;
 
-.hero{
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1) ;
+  }
+}
+
+.hero {
 
   &__subtitle, &__duration {
     color: #FFFFFFCC;
     font-weight: 400;
     font-size: 14px;
   }
+
   & > .container {
     display: flex;
     flex-direction: column;
@@ -21,12 +34,13 @@
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     margin-bottom: 16px;
     @media screen and (min-width: 678px) {
       width: 253px;
     }
   }
+
   &__duration {
     width: 110px;
     margin-bottom: 32px;
@@ -34,7 +48,9 @@
       margin-bottom: 105px;
     }
   }
+
   & > .container > picture > img {
+    animation: scale 3s 10;
     @media screen and (min-width: 678px) {
 
       margin-left: 0;
@@ -45,13 +61,14 @@
       height: 598px;
     }
   }
+
   &__order__btn {
     margin-bottom: 32px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: ease;
 
-    &:is(:hover, :focus){
+    &:is(:hover, :focus) {
       background-color: $hover-color;
     }
 
@@ -67,6 +84,7 @@
       margin-left: 110px;
     }
   }
+
   &__title {
     color: #FFFFFFCC;
     font-weight: 600;
@@ -85,7 +103,7 @@
     @media screen and (min-width: 1320px) {
       width: 400px;
       margin-left: 110px;
-      font-size:50px;
+      font-size: 50px;
       margin-bottom: 85px;
     }
   }
