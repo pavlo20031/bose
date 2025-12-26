@@ -100,6 +100,13 @@
     padding-bottom: 16px;
     margin-bottom: 32px;
     width: 100%;
+    transition-property: border-bottom-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    &:focus{
+      border-bottom-color: $accent-color;
+    }
 
     @media screen and (min-width: 1320px) {
       font-size: 20px;
@@ -118,6 +125,13 @@
     padding-bottom: 60px;
     margin-bottom: 40px;
     width: 100%;
+    transition-property: border-bottom-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    &:focus{
+      border-bottom-color: $accent-color;
+    }
 
     @media screen and (min-width: 1320px) {
       font-size: 20px;
@@ -178,6 +192,16 @@
     padding: 20px 117px;
     background-color: transparent;
     border: 1px solid $accent-color;
+
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    &:is(:hover, :focus){
+      border-color: $textbtn-color;
+      color: $accent-color;
+
+    }
 
     @media screen and (min-width: 1320px) {
       font-size: 20px;

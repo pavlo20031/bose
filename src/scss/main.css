@@ -658,7 +658,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  color: #e7e7e7;
+  color: #E7E7E7;
 }
 @media screen and (min-width: 678px) {
   .bose__title {
@@ -669,7 +669,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(250, 250, 250, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 20px;
 }
 @media screen and (min-width: 1320px) {
@@ -688,7 +688,7 @@ body {
 .bose__subtitle {
   font-weight: 600;
   font-size: 20px;
-  color: rgb(231, 231, 231);
+  color: #E7E7E7;
   margin-top: 32px;
   margin-bottom: 16px;
 }
@@ -736,7 +736,7 @@ body {
   font-style: normal;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  color: #e7e7e7;
+  color: #E7E7E7;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 1320px) {
@@ -757,16 +757,17 @@ body {
   font-size: 20px;
   line-height: 125%;
   font-style: normal;
-  color: #e7e7e7;
-}
-@media screen and (min-width: 1320px) {
-  .guarantees__subtitle {
-    font-size: 28px;
-  }
+  color: #E7E7E7;
 }
 @media screen and (min-width: 678px) {
   .guarantees__subtitle {
     width: 320px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .guarantees__subtitle {
+    font-size: 28px;
+    width: 100%;
   }
 }
 .guarantees__text {
@@ -777,17 +778,18 @@ body {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 20px;
 }
-@media screen and (min-width: 1320px) {
-  .guarantees__text {
-    font-size: 20px;
-    line-height: 145%;
-  }
-}
 @media screen and (min-width: 678px) {
   .guarantees__text {
     font-size: 16px;
     line-height: 145%;
     width: 270px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .guarantees__text {
+    font-size: 20px;
+    line-height: 145%;
+    width: 450px;
   }
 }
 .guarantees__item::before {
@@ -1694,6 +1696,12 @@ body {
   padding-bottom: 16px;
   margin-bottom: 32px;
   width: 100%;
+  transition-property: border-bottom-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.feedback__input:focus {
+  border-bottom-color: #DF3D3A;
 }
 @media screen and (min-width: 1320px) {
   .feedback__input {
@@ -1713,6 +1721,12 @@ body {
   padding-bottom: 60px;
   margin-bottom: 40px;
   width: 100%;
+  transition-property: border-bottom-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.feedback__texter:focus {
+  border-bottom-color: #DF3D3A;
 }
 @media screen and (min-width: 1320px) {
   .feedback__texter {
@@ -1778,6 +1792,13 @@ body {
   padding: 20px 117px;
   background-color: transparent;
   border: 1px solid #DF3D3A;
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.feedback__button:is(:hover, :focus) {
+  border-color: rgba(255, 255, 255, 0.9);
+  color: #DF3D3A;
 }
 @media screen and (min-width: 1320px) {
   .feedback__button {
